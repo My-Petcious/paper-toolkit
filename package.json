@@ -3,8 +3,8 @@
   "version": "7.6.0",
   "scripts": {
     "dev": "npm-run-all --parallel vite_dev shopify_dev",
-    "pull": "shopify theme pull --nodelete --store brickspacetestingstore.myshopify.com",
-    "shopify_dev": "shopify theme dev --store brickspacetestingstore.myshopify.com",
+    "pull": "shopify theme pull --nodelete --store hs1wyp-d8.myshopify.com",
+    "shopify_dev": "shopify theme dev --store hs1wyp-d8.myshopify.com",
     "vite_dev": "vite dev",
     "test": "vitest",
     "coverage": "vitest run --coverage",

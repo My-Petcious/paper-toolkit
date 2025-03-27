@@ -1,0 +1,363 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "navigation_slider_qjE3yV": {
+      "type": "navigation-slider",
+      "blocks": {
+        "slide_83n4jt": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Dog.svg",
+            "heading": "狗狗專區",
+            "url": "shopify://collections/狗狗專區"
+          }
+        },
+        "slide_TXdDg6": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Cat.svg",
+            "heading": "貓貓專區",
+            "url": "shopify://collections/貓貓專區"
+          }
+        },
+        "slide_qnD7hm": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_FoodProducts.svg",
+            "heading": "主糧",
+            "url": "shopify://collections/主糧"
+          }
+        },
+        "slide_Grjyn9": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Supplements.svg",
+            "heading": "保健產品",
+            "url": "shopify://collections/保健品及補充品"
+          }
+        },
+        "slide_gedtLg": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Bed.svg",
+            "heading": "家居用品",
+            "url": "shopify://collections/家居用品"
+          }
+        },
+        "slide_Xm3BVU": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Toys.svg",
+            "heading": "玩具",
+            "url": "shopify://collections/玩具"
+          }
+        },
+        "slide_8QJ78A": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_CleaningProducts.svg",
+            "heading": "美容及清潔護理",
+            "url": "shopify://collections/美容及清潔護理"
+          }
+        }
+      },
+      "block_order": [
+        "slide_83n4jt",
+        "slide_TXdDg6",
+        "slide_qnD7hm",
+        "slide_Grjyn9",
+        "slide_gedtLg",
+        "slide_Xm3BVU",
+        "slide_8QJ78A"
+      ],
+      "custom_css": [
+        ".color__bg-overlay-1 {background-color: #1f4426;}"
+      ],
+      "settings": {
+        "spacing_top": 0,
+        "spacing_bottom": 0,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "style_border": "border--b-width",
+        "visibility": "md:hidden"
+      }
+    },
+    "slideshow_bemzQ7": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_QrpVf7": {
+          "type": "slide",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/andriyko-podilnyk-RCfi7vgJjUY-unsplash.jpg",
+            "show_entire_image": false,
+            "show_video_background_mobile": true,
+            "heading": "Heading 1",
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+            "button_color": "btn",
+            "button_label": "Button label",
+            "button_url": "/collections/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": "/collections/all"
+          }
+        },
+        "slide_UzwFLc": {
+          "type": "slide",
+          "settings": {
+            "show_entire_image": false,
+            "show_video_background_mobile": true,
+            "heading": "Heading 2",
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+            "button_color": "btn",
+            "button_label": "Button label",
+            "button_url": "/collections/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "Button label",
+            "secondary_button_url": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QrpVf7",
+        "slide_UzwFLc"
+      ],
+      "settings": {
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": false,
+        "style_border": "border--b-width",
+        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-start",
+        "visibility": "",
+        "auto_scroll_delay": 5,
+        "auto_scroll": true
+      }
+    },
+    "content_slider_RabNXQ": {
+      "type": "content-slider",
+      "blocks": {
+        "content_GpnF7g": {
+          "type": "content",
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "button_label": "Button",
+            "button_url": "/",
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "color__border-divider-1",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-start content-start",
+            "layout_x_alignment": "",
+            "layout_desktop_width": 5,
+            "layout_mobile_width": 8
+          }
+        },
+        "content_FyaHLD": {
+          "type": "content",
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "button_label": "Button",
+            "button_url": "/",
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "color__border-divider-1",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-start content-start",
+            "layout_x_alignment": "",
+            "layout_desktop_width": 5,
+            "layout_mobile_width": 8
+          }
+        },
+        "content_xTfzPq": {
+          "type": "content",
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "button_label": "Button",
+            "button_url": "/",
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "color__border-divider-1",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-start content-start",
+            "layout_x_alignment": "",
+            "layout_desktop_width": 5,
+            "layout_mobile_width": 8
+          }
+        },
+        "content_3V6CyG": {
+          "type": "content",
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "button_label": "Button",
+            "button_url": "/",
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "color__border-divider-1",
+            "color_text": "color__text",
+            "color_button": "btn",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-start content-start",
+            "layout_x_alignment": "",
+            "layout_desktop_width": 5,
+            "layout_mobile_width": 8
+          }
+        }
+      },
+      "block_order": [
+        "content_GpnF7g",
+        "content_FyaHLD",
+        "content_xTfzPq",
+        "content_3V6CyG"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Block heading",
+        "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+        "button_label": "Button label",
+        "button_url": "/",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "collection_slider_zcHUW9": {
+      "type": "collection-slider",
+      "blocks": {
+        "card_adkTJJ": {
+          "type": "card",
+          "settings": {
+            "url": "",
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
+            "button_label": "Button",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "background_color_scheme": "color__bg-body color__text",
+            "color_border": "border--width color__border-divider-1",
+            "color_button": "btn btn--secondary",
+            "column_size": "col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "card_adkTJJ"
+      ],
+      "settings": {
+        "collection": [
+          "royal-canin"
+        ],
+        "heading": "Collection list slider",
+        "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+        "button_label": "查看全部",
+        "button_url": "shopify://collections/獸醫處方",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "justify-between",
+        "card_width_mobile": 8,
+        "card_width_desktop": 3,
+        "visibility": "",
+        "enable_collection_size_count": true
+      }
+    },
+    "product_slider_cdyq3P": {
+      "type": "product-slider",
+      "blocks": {
+        "card_GxP4XM": {
+          "type": "card",
+          "settings": {
+            "url": "/",
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+            "button_label": "Button",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "index": 2,
+            "background_color_scheme": "color__bg-body color__text",
+            "color_border": "border--width color__border-divider-1",
+            "color_button": "btn btn--secondary",
+            "column_size": "col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "card_GxP4XM"
+      ],
+      "settings": {
+        "collection": "保健品及補充品",
+        "products_count": 7,
+        "heading": "Product slider",
+        "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
+        "button_label": "Button",
+        "button_url": "/collections/all",
+        "spacing_top": 100,
+        "spacing_bottom": 100,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "card_width_mobile": 8,
+        "card_width_desktop": 3,
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    }
+  },
+  "order": [
+    "navigation_slider_qjE3yV",
+    "slideshow_bemzQ7",
+    "content_slider_RabNXQ",
+    "collection_slider_zcHUW9",
+    "product_slider_cdyq3P"
+  ]
+}
