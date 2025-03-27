@@ -172,7 +172,7 @@
                   style="
                     padding-top:{{ block.settings.spacing_top }}px;
                     padding-bottom:{{ block.settings.spacing_bottom }}px;">
-                  {% render 'product__add', 
+                  {% render 'product__add-prescription', 
                     blocksettings: block.settings %}
                   {% if block.settings.enable_dynamic_checkout %}
                     <div class="px-4 mt-4"
@@ -335,7 +335,7 @@
                     style="
                       padding-top:{{ block.settings.spacing_top }}px;
                       padding-bottom:{{ block.settings.spacing_bottom }}px;">
-                    {% render 'product__add', 
+                    {% render 'product__add-prescription', 
                       blocksettings: block.settings %}
                     {% if block.settings.enable_dynamic_checkout %}
                       <div class="px-4 mt-4"
