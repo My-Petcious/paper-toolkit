@@ -97,7 +97,7 @@
     endif
   endcapture
 
-  if product.tags contains 'disable_quick_add' or product.metafields.custom.prescription_requirement
+  if product.tags contains 'disable_quick_add'
     assign disable_quick_add = true
   else
     assign disable_quick_add = false
@@ -294,7 +294,7 @@
               addCartItem(current_variant_id, current_variant_selling_plan_id, quantity, true);
               setTimeout(function(){ button_loading = false}, 500);
             ">
-            {% if product.has_only_default_variant and product.selected_or_first_available_selling_plan_allocation == nil %}
+            {% if product.has_only_default_variant and product.selected_or_first_available_selling_plan_allocation == nil and product.metafields.custom.prescription_requirement != nill and product.metafields.custom.prescription_requirement == false %}
               <input 
                 name="id" 
                 type="hidden"
@@ -596,7 +596,7 @@
               addCartItem(current_variant_id, current_variant_selling_plan_id, quantity, true);
               setTimeout(function(){ button_loading = false}, 500);
             ">
-            {% if product.has_only_default_variant and product.selected_or_first_available_selling_plan_allocation == nil %}
+            {% if product.has_only_default_variant and product.selected_or_first_available_selling_plan_allocation == nil and product.metafields.custom.prescription_requirement != nill and product.metafields.custom.prescription_requirement == false %}
               <input 
                 name="id" 
                 type="hidden"
