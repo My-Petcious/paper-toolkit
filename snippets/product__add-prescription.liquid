@@ -192,14 +192,7 @@
         {% else %}
           x-show="current_variant_exists && current_variant_available && all_options_selected"
         {% endif %}
-        {% if product.metafields.custom.prescription_requirement %}
-        @click.prevent="
-          if (!presscription_acknowledged) {
-            return;
-          }
-          button_loading = true;
-          $el.form.submit();"
-        {% endif %}>
+        {% if product.metafields.custom.prescription_requirement %}>
         
         <div class="btn__content">
           {% if product.metafields.custom.button_text %}
