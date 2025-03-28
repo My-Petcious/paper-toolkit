@@ -43,7 +43,13 @@
     button_loading: false
   }"
   x-intersect:enter="stickyadd = false;"
-  x-intersect:leave="stickyadd = true;">
+  x-intersect:leave="
+    {% if product.metafields.custom.prescription_requirement %}
+      stickyadd = false
+    {% else %}
+      stickyadd = true
+    {% endif %}
+  ">
   <div class="flex flex-wrap items-end gap-4">
 
     {% if product.metafields.custom.prescription_requirement %}
