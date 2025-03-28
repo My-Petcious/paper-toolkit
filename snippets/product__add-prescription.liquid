@@ -38,6 +38,10 @@
 {% comment %} Add {% endcomment %}
 <div 
   class="w-full px-4"
+  x-data="{ 
+    presscription_acknowledged: false,
+    button_loading: false
+  }"
   x-intersect:enter="stickyadd = false;"
   x-intersect:leave="stickyadd = true;">
   <div class="flex flex-wrap items-end gap-4">
@@ -45,7 +49,11 @@
     {% if product.metafields.custom.prescription_requirement %}
       <div class="mt-2">
         <label class="flex items-center">
-          <input type="checkbox" class="form-checkbox" name="prescription_acknowledgement">
+          <input 
+            type="checkbox" 
+            class="form-checkbox" 
+            name="prescription_acknowledgement"
+            x-model="presscription_acknowledged">
           <span class="ml-2 text-sm text-gray-500">我已明白以及確認此產品為獸醫處方產品</span>
         </label>
       </div>
@@ -164,7 +172,11 @@
         type="submit"
         role="button"
         :class="{ 'btn--loading' : cart_loading && button_loading }"
-        :disabled="button_loading"
+        {% if product.metafields.custom.prescription_requirement %}
+          :disabled="button_loading || !presscription_acknowledged"
+        {% else %}
+          :disabled="button_loading"
+        {% endif %}
         {% if is_edit_section %}
           {% if product.selling_plan_groups.size > 0 %}
             x-show="current_variant_exists && current_variant_available && all_options_selected"
@@ -173,7 +185,16 @@
           {% endif %}
         {% else %}
           x-show="current_variant_exists && current_variant_available && all_options_selected"
-        {% endif %}>
+        {% endif %}
+        @click.prevent="
+          {% if product.metafields.custom.prescription_requirement %}
+          if (!presscription_acknowledged) {
+            return;
+          }
+          {% endif %}
+          button_loading = true;
+          $el.form.submit();
+        ">
         <div class="btn__content">
           {% if product.metafields.custom.button_text %}
             {{ product.metafields.custom.button_text }} {% if settings.type_seperator == 'dot' %}·{% else %}|{% endif %}
