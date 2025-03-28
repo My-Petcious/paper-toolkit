@@ -113,6 +113,16 @@
     assign alignment = 'text-right items-end justify-end'
   endif
 
+  assign should_render_quick_add_section = false
+
+  if product.has_only_default_variant == false or product.selected_or_first_available_selling_plan_allocation
+    assign should_render_quick_add_section = true
+  endif
+
+  if product.metafields.custom.prescription_requirement == true
+    assign should_render_quick_add_section = true
+  endif
+
 %}
 
 <div class="group/product relative w-full flex flex-col md:block 
@@ -294,7 +304,29 @@
               addCartItem(current_variant_id, current_variant_selling_plan_id, quantity, true);
               setTimeout(function(){ button_loading = false}, 500);
             ">
-            {% if product.has_only_default_variant and product.selected_or_first_available_selling_plan_allocation == nil and product.metafields.custom.prescription_requirement != nill and product.metafields.custom.prescription_requirement == false %}
+            {% if should_render_quick_add_section%}
+              <button 
+                class="!w-full btn btn--small btn--load {{ settings.quick_color_button }}" 
+                :class="{ 'btn--loading' : button_loading }"
+                type="button" 
+                role="button" 
+                :disabled="button_loading"
+                @click="
+                  button_loading = true; 
+                  fetchAndRenderQuickAdd('{{ product.handle }}', 'product');
+                  setTimeout(function(){ button_loading = false}, 500);">
+                <div class="btn__content">
+                  {% if product.metafields.custom.button_text %}
+                    {{ product.metafields.custom.button_text }}
+                  {% else %}
+                    {{ 'actions.add_to_cart' | t }}
+                  {% endif %}
+                </div>
+                <div class="btn__spinner">
+                  {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
+                </div>
+              </button> 
+            {% else %}
               <input 
                 name="id" 
                 type="hidden"
@@ -314,28 +346,6 @@
                 type="submit" 
                 role="button" 
                 :disabled="button_loading">
-                <div class="btn__content">
-                  {% if product.metafields.custom.button_text %}
-                    {{ product.metafields.custom.button_text }}
-                  {% else %}
-                    {{ 'actions.add_to_cart' | t }}
-                  {% endif %}
-                </div>
-                <div class="btn__spinner">
-                  {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
-                </div>
-              </button>
-            {% else %}
-              <button 
-                class="!w-full btn btn--small btn--load {{ settings.quick_color_button }}" 
-                :class="{ 'btn--loading' : button_loading }"
-                type="button" 
-                role="button" 
-                :disabled="button_loading"
-                @click="
-                  button_loading = true; 
-                  fetchAndRenderQuickAdd('{{ product.handle }}', 'product');
-                  setTimeout(function(){ button_loading = false}, 500);">
                 <div class="btn__content">
                   {% if product.metafields.custom.button_text %}
                     {{ product.metafields.custom.button_text }}
@@ -596,7 +606,30 @@
               addCartItem(current_variant_id, current_variant_selling_plan_id, quantity, true);
               setTimeout(function(){ button_loading = false}, 500);
             ">
-            {% if product.has_only_default_variant and product.selected_or_first_available_selling_plan_allocation == nil and product.metafields.custom.prescription_requirement != nill and product.metafields.custom.prescription_requirement == false %}
+            {% if should_render_quick_add_section %}
+              <button 
+                class="!w-full btn btn--small btn--load {{ settings.quick_color_button }}" 
+                :class="{ 'btn--loading' : button_loading }"
+                type="button" 
+                role="button" 
+                :disabled="button_loading"
+                @click="
+                  button_loading = true; 
+                  fetchAndRenderQuickAdd('{{ product.handle }}', 'product');
+                  setTimeout(function(){ button_loading = false}, 500);
+                ">
+                <div class="btn__content">
+                  {% if product.metafields.custom.button_text %}
+                    {{ product.metafields.custom.button_text }}
+                  {% else %}
+                    {{ 'actions.add_to_cart' | t }}
+                  {% endif %}
+                </div>
+                <div class="btn__spinner">
+                  {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
+                </div>
+              </button>              
+            {% else %}
               <input 
                 name="id" 
                 type="hidden"
@@ -616,29 +649,6 @@
                 type="submit" 
                 role="button" 
                 :disabled="button_loading">
-                <div class="btn__content">
-                  {% if product.metafields.custom.button_text %}
-                    {{ product.metafields.custom.button_text }}
-                  {% else %}
-                    {{ 'actions.add_to_cart' | t }}
-                  {% endif %}
-                </div>
-                <div class="btn__spinner">
-                  {% render 'component__icon', icon: 'spinner', size: '24', class: '' %}
-                </div>
-              </button>
-            {% else %}
-              <button 
-                class="!w-full btn btn--small btn--load {{ settings.quick_color_button }}" 
-                :class="{ 'btn--loading' : button_loading }"
-                type="button" 
-                role="button" 
-                :disabled="button_loading"
-                @click="
-                  button_loading = true; 
-                  fetchAndRenderQuickAdd('{{ product.handle }}', 'product');
-                  setTimeout(function(){ button_loading = false}, 500);
-                ">
                 <div class="btn__content">
                   {% if product.metafields.custom.button_text %}
                     {{ product.metafields.custom.button_text }}
