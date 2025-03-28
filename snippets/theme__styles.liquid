@@ -154,24 +154,16 @@
 {% comment %} Capture css variables {% endcomment %}
 {% style %}
 
-  @font-face { 
-    font-family: "GenJyuuGothic"; 
-    src: url('{{ "https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Medium.woff2?v=1743168044" }}') format("woff2"),  
-      url('{{ "https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Regular.woff2?v=1743168044" }}') format("woff"),
-      url('{{ "https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Normal.woff2?v=1743168044" }}') format("woff"),
-      url('{{ "https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Bold.woff2?v=1743168044" }}') format("woff"),
-      url('{{ "https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Light.woff2?v=1743168044" }}') format("woff"),
-      url('{{ "https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Heavy.woff2?v=1743168044" }}') format("woff"),
-      url('{{ "https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-ExtraLight.woff2?v=1743168044" }}') format("woff"); 
-  }
-
-  {{ font_body | font_face: font_display: 'swap' }}
-  {{ font_body_bold | font_face: font_display: 'swap' }}
-  {{ font_body_italic | font_face: font_display: 'swap' }}
-  {{ font_body_bold_italic | font_face: font_display: 'swap' }}
-  {{ font_heading | font_face: font_display: 'swap' }}
-  {{ font_nav | font_face: font_display: 'swap' }}
-
+@font-face { 
+  font-family: "GenJyuuGothic"; 
+  src: url("https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Medium.woff2?v=1743170284") format("woff2"),
+       url("https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Regular.woff2?v=1743170268") format("woff2"),
+       url("https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Normal.woff2?v=1743170312") format("woff2"),
+       url("https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Bold.woff2?v=1743170297") format("woff2"),
+       url("https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Light.woff2?v=1743170253") format("woff2"),
+       url("https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-Heavy.woff2?v=1743170235") format("woff2"),
+       url("https://cdn.shopify.com/s/files/1/0924/9711/7458/files/GenJyuuGothic-ExtraLight.woff2?v=1743170342") format("woff2"); 
+}
   :root {
 
     /* Background colors */
@@ -272,7 +264,7 @@
     --type__font-nav-family: 'GenJyuuGothic';
     --type__font-nav-style: {{ settings.type_font_nav.style }};
     --type__font-nav-weight: {{ settings.type_font_nav.weight }};
-    --type__font-base-size: {{ settings.type_base_size }};
+    --type__font-base-size: {{ settings.type_base_size }}px;
     --type__button-capiliziation: {{ settings.type_button_capitilization }};
 
     /* Inputs */
