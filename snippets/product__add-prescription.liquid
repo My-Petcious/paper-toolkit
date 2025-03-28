@@ -45,7 +45,7 @@
   x-intersect:enter="stickyadd = false;"
   x-intersect:leave="
     {% if product.metafields.custom.prescription_requirement %}
-      stickyadd = false
+      stickyadd = presscription_acknowledged
     {% else %}
       stickyadd = true
     {% endif %}
