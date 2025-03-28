@@ -41,12 +41,6 @@
     assign url = product.url
   endif
 
-  if product.tags contains 'disable_quick_add'
-    assign disable_quick_add = true
-  else
-    assign disable_quick_add = false
-  endif
-
   capture badge_background
     if settings.product_card_badge_scheme == 'light_outline' or settings.product_card_badge_scheme == 'dark_outline'
       echo 'trasnsparent'
@@ -103,7 +97,7 @@
     endif
   endcapture
 
-  if product.tags contains 'disable_quick_add'
+  if product.tags contains 'disable_quick_add' or product.metafields.custom.prescription_requirement
     assign disable_quick_add = true
   else
     assign disable_quick_add = false
