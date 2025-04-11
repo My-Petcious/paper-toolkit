@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "165583830739141e89": {
@@ -41,44 +41,6 @@
     },
     "main": {
       "type": "list-collections__main",
-      "blocks": {
-        "90f1e492-34c2-4553-ab3f-9cae552e2351": {
-          "type": "newsletter",
-          "settings": {
-            "index": 12,
-            "heading": "Block heading",
-            "content": "<p>Tell customers why they should subscribe to your newsletter.<\/p>",
-            "button_label": "Subscribe",
-            "disclaimer": "",
-            "success": "<p>Success! You’ve been subscribed.<\/p>",
-            "background_color_scheme": "color__bg-overlay-1 color__text",
-            "color_border": "border--width color__border-divider-1",
-            "color_button": "btn btn--secondary",
-            "column_size": "col-span-2"
-          }
-        },
-        "7f05c199-5ad2-42c8-a0b7-42497df71be0": {
-          "type": "content",
-          "settings": {
-            "index": 6,
-            "url": "",
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "button_label": "Button",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "background_color_scheme": "color__bg-overlay-1 color__text",
-            "color_border": "border--width color__border-divider-1",
-            "color_button": "btn btn--secondary",
-            "column_size": "col-span-2"
-          }
-        }
-      },
-      "block_order": [
-        "90f1e492-34c2-4553-ab3f-9cae552e2351",
-        "7f05c199-5ad2-42c8-a0b7-42497df71be0"
-      ],
       "settings": {
         "spacing_top": 20,
         "spacing_bottom": 20,

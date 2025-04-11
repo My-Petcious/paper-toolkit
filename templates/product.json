@@ -171,6 +171,7 @@
         "76f2c051-662d-4c42-b036-d6658cf9616f",
         "848f5aea-f7ad-4974-a5fb-020776e3e523"
       ],
+      "custom_css": [],
       "settings": {
         "enable_default_variant": true,
         "enable_default_selling_plan_widget": true,
@@ -227,6 +228,7 @@
         "165592515344a810fb-1",
         "165592515344a810fb-2"
       ],
+      "disabled": true,
       "settings": {
         "heading": "FAQs",
         "content": "",

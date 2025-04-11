@@ -9,13 +9,51 @@
  */
 {
   "sections": {
+    "slideshow_bemzQ7": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_QrpVf7": {
+          "type": "slide",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/MyPetciousBanner.png",
+            "image_background_mobile": "shopify://shop_images/MyPetcious_Homepage_Banner_1.png",
+            "show_entire_image": false,
+            "show_video_background_mobile": false,
+            "heading": "由專業獸醫團隊管理",
+            "content": "<p>全天候照顧寵物所需</p>",
+            "button_color": "btn",
+            "button_label": "選購產品",
+            "button_url": "/collections/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QrpVf7"
+      ],
+      "settings": {
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "color__light",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": false,
+        "style_border": "border--b-width",
+        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
+        "layout_y_alignment": "items-center",
+        "layout_x_alignment": "justify-center text-center",
+        "visibility": "",
+        "auto_scroll_delay": 5,
+        "auto_scroll": true
+      }
+    },
     "navigation_slider_qjE3yV": {
       "type": "navigation-slider",
       "blocks": {
         "slide_83n4jt": {
           "type": "slide",
           "settings": {
-            "image_featured": "shopify://shop_images/MyPetcious_Icons_Dog.svg",
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Dog_0194efae-2164-4e50-8b39-350f0e8680e7.svg",
             "heading": "狗狗專區",
             "url": "shopify://collections/狗狗專區"
           }
@@ -23,7 +61,7 @@
         "slide_TXdDg6": {
           "type": "slide",
           "settings": {
-            "image_featured": "shopify://shop_images/MyPetcious_Icons_Cat.svg",
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Cat_f3444041-f761-4fba-bd63-2a5f1ec1d81f.svg",
             "heading": "貓貓專區",
             "url": "shopify://collections/貓貓專區"
           }
@@ -31,15 +69,15 @@
         "slide_qnD7hm": {
           "type": "slide",
           "settings": {
-            "image_featured": "shopify://shop_images/MyPetcious_Icons_FoodProducts.svg",
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_FoodProducts_2a3ee43a-a9a4-409b-8cc9-e04e1f158d45.svg",
             "heading": "主糧",
-            "url": "shopify://collections/主糧"
+            "url": "shopify://collections/一般乾糧"
           }
         },
         "slide_Grjyn9": {
           "type": "slide",
           "settings": {
-            "image_featured": "shopify://shop_images/MyPetcious_Icons_Supplements.svg",
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Supplements_00ce161b-8203-414b-9f51-b1886d1ff8cd.svg",
             "heading": "保健產品",
             "url": "shopify://collections/保健品及補充品"
           }
@@ -47,23 +85,15 @@
         "slide_gedtLg": {
           "type": "slide",
           "settings": {
-            "image_featured": "shopify://shop_images/MyPetcious_Icons_Bed.svg",
-            "heading": "家居用品",
-            "url": "shopify://collections/家居用品"
-          }
-        },
-        "slide_Xm3BVU": {
-          "type": "slide",
-          "settings": {
-            "image_featured": "shopify://shop_images/MyPetcious_Icons_Toys.svg",
-            "heading": "玩具",
-            "url": "shopify://collections/玩具"
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Bed_44338746-1c9e-4e02-9dde-53d08e942ac9.svg",
+            "heading": "用品及玩具",
+            "url": "shopify://collections/用品及玩具"
           }
         },
         "slide_8QJ78A": {
           "type": "slide",
           "settings": {
-            "image_featured": "shopify://shop_images/MyPetcious_Icons_CleaningProducts.svg",
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_CleaningProducts_c9d29d41-8773-43e0-87f6-2f1117ff0571.svg",
             "heading": "美容及清潔護理",
             "url": "shopify://collections/美容及清潔護理"
           }
@@ -75,77 +105,64 @@
         "slide_qnD7hm",
         "slide_Grjyn9",
         "slide_gedtLg",
-        "slide_Xm3BVU",
         "slide_8QJ78A"
       ],
       "custom_css": [
         ".color__bg-overlay-1 {background-color: #1f4426;}"
       ],
       "settings": {
-        "spacing_top": 0,
-        "spacing_bottom": 0,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
-        "style_border": "border--b-width",
+        "style_border": "border--b-width border--t-width",
         "visibility": "md:hidden"
       }
     },
-    "slideshow_bemzQ7": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_QrpVf7": {
-          "type": "slide",
-          "settings": {
-            "image_background_desktop": "shopify://shop_images/andriyko-podilnyk-RCfi7vgJjUY-unsplash.jpg",
-            "show_entire_image": false,
-            "show_video_background_mobile": true,
-            "heading": "Heading 1",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_color": "btn",
-            "button_label": "Button label",
-            "button_url": "/collections/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "Button label",
-            "secondary_button_url": "/collections/all"
-          }
-        },
-        "slide_UzwFLc": {
-          "type": "slide",
-          "settings": {
-            "show_entire_image": false,
-            "show_video_background_mobile": true,
-            "heading": "Heading 2",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_color": "btn",
-            "button_label": "Button label",
-            "button_url": "/collections/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "Button label",
-            "secondary_button_url": "/collections/all"
-          }
-        }
-      },
-      "block_order": [
-        "slide_QrpVf7",
-        "slide_UzwFLc"
-      ],
+    "text_r9cn7X": {
+      "type": "text",
       "settings": {
-        "color_scheme": "color__bg-overlay-1 color__text",
-        "color_text": "",
+        "heading": "About My Petcious",
+        "content": "<p>My Petcious 提供獸醫認可的優質寵物用品與專業健康指導，涵蓋處方糧、營養補充品及獸醫知識，幫助飼主安心選擇最佳照護方案，讓寵物更健康、更幸福。</p>",
+        "button_label": "關於我們",
+        "button_url": "shopify://pages/關於-my-petcious",
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
-        "enable_gradient": false,
+        "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
-        "layout_y_spacing": "min-h-[450px] md:min-h-[550px]",
-        "layout_y_alignment": "items-end",
-        "layout_x_alignment": "justify-start",
-        "visibility": "",
-        "auto_scroll_delay": 5,
-        "auto_scroll": true
+        "layout_x_alignment": "text-center justify-center",
+        "visibility": ""
       }
     },
     "content_slider_RabNXQ": {
       "type": "content-slider",
       "blocks": {
+        "content_iAab9z": {
+          "type": "content",
+          "settings": {
+            "heading": "Block heading",
+            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
+            "enable_autoplay": true,
+            "enable_mute_toggle": true,
+            "enable_loop": true,
+            "button_label": "Button",
+            "button_url": "shopify://collections/all",
+            "spacing_top": 80,
+            "spacing_bottom": 0,
+            "enable_padding": true,
+            "color_scheme": "color__bg-body color__text",
+            "color_border": "color__border-divider-1",
+            "color_text": "color__text",
+            "color_button": "btn btn--secondary",
+            "enable_gradient": false,
+            "layout_y_alignment": "items-end content-end",
+            "layout_x_alignment": "",
+            "layout_desktop_width": 6,
+            "layout_mobile_width": 10
+          }
+        },
         "content_GpnF7g": {
           "type": "content",
           "settings": {
@@ -244,6 +261,7 @@
         }
       },
       "block_order": [
+        "content_iAab9z",
         "content_GpnF7g",
         "content_FyaHLD",
         "content_xTfzPq",
@@ -267,37 +285,20 @@
     },
     "collection_slider_zcHUW9": {
       "type": "collection-slider",
-      "blocks": {
-        "card_adkTJJ": {
-          "type": "card",
-          "settings": {
-            "url": "",
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
-            "button_label": "Button",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "background_color_scheme": "color__bg-body color__text",
-            "color_border": "border--width color__border-divider-1",
-            "color_button": "btn btn--secondary",
-            "column_size": "col-span-1"
-          }
-        }
-      },
-      "block_order": [
-        "card_adkTJJ"
-      ],
       "settings": {
         "collection": [
-          "royal-canin"
+          "狗狗專區",
+          "貓貓專區",
+          "主糧",
+          "保健品及補充品",
+          "用品及玩具"
         ],
-        "heading": "Collection list slider",
-        "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-        "button_label": "查看全部",
-        "button_url": "shopify://collections/獸醫處方",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
+        "heading": "產品分類",
+        "content": "<p>探索各式各樣的專業寵物護理產品，滿足每隻寵物的需求</p>",
+        "button_label": "查看更多",
+        "button_url": "shopify://collections",
+        "spacing_top": 60,
+        "spacing_bottom": 60,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -306,7 +307,84 @@
         "card_width_mobile": 8,
         "card_width_desktop": 3,
         "visibility": "",
-        "enable_collection_size_count": true
+        "enable_collection_size_count": false
+      }
+    },
+    "icon_grid_CDEwhL": {
+      "type": "icon-grid",
+      "blocks": {
+        "icon_wtmdfz": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/MyPetcious_Illustrations_Vet.png",
+            "icon_height": "h-32",
+            "heading": "獸醫團隊嚴選 由 Dr. Erik 主理",
+            "content": "<p>提供專業、經獸醫認證的護理方案，確保您的寵物健康</p>",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "layout_alignment": "flex-col",
+            "layout_x_alignment": "text-center justify-center",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "icon_yUBhwT": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/MyPetcious_Illustrations_Store.png",
+            "icon_height": "h-32",
+            "heading": "量身定制的健康寵物方案",
+            "content": "<p>根據每隻寵物的需求，提供個性化的健康管理服務</p>",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "layout_alignment": "flex-col",
+            "layout_x_alignment": "text-center justify-center",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        },
+        "icon_Drg9CN": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify://shop_images/MyPetcious_Illustrations_Box.png",
+            "icon_height": "h-32",
+            "heading": "值得信賴的寵物護理夥伴",
+            "content": "<p>我們致力於與您共同照顧您的寵物，成為您的長期信賴夥伴</p>",
+            "enable_padding": true,
+            "color_scheme": "color__bg-secondary color__secondary",
+            "color_border": "!color__border-transparent",
+            "layout_alignment": "flex-col",
+            "layout_x_alignment": "text-center justify-center",
+            "layout_row_span": "row-span-1",
+            "layout_col_span": "col-span-1 md:col-span-1"
+          }
+        }
+      },
+      "block_order": [
+        "icon_wtmdfz",
+        "icon_yUBhwT",
+        "icon_Drg9CN"
+      ],
+      "custom_css": [
+        "p {font-weight: 100;}"
+      ],
+      "settings": {
+        "heading": "為什麼選擇 My Petcious？",
+        "content": "",
+        "button_label": "",
+        "button_url": "",
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-3",
+        "row_size_mobile": "grid-cols-1",
+        "layout_x_alignment": "text-center justify-center flex-col items-center",
+        "visibility": ""
       }
     },
     "product_slider_cdyq3P": {
@@ -333,12 +411,13 @@
       "block_order": [
         "card_GxP4XM"
       ],
+      "disabled": true,
       "settings": {
         "collection": "保健品及補充品",
         "products_count": 7,
-        "heading": "Product slider",
-        "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-        "button_label": "Button",
+        "heading": "熱賣產品",
+        "content": "<p>精選最受歡迎的寵物用品，經獸醫認可，品質安心，守護您的毛孩健康！</p>",
+        "button_label": "查看更多",
         "button_url": "/collections/all",
         "spacing_top": 100,
         "spacing_bottom": 100,
@@ -351,13 +430,105 @@
         "layout_x_alignment": "justify-between",
         "visibility": ""
       }
+    },
+    "product_grid_dXNX3w": {
+      "type": "product-grid",
+      "settings": {
+        "collection": "熱賣產品",
+        "products_count": 8,
+        "heading": "熱賣產品",
+        "content": "<p>精選最受歡迎的寵物用品，經獸醫認可，品質安心，守護您的毛孩健康！</p>",
+        "button_label": "查看更多",
+        "button_url": "shopify://collections/熱賣產品",
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "banner_LBdArg": {
+      "type": "banner",
+      "custom_css": [
+        "img {object-fit: cover; object-position: top; /* Ensures the top part is visible */ width: 100%; height: 100%;}"
+      ],
+      "settings": {
+        "url": "",
+        "image_background_desktop": "shopify://shop_images/My_Petcious_Brand_Deck_1.png",
+        "image_background_mobile": "shopify://shop_images/MyPetcious_Collections.png",
+        "show_entire_image": false,
+        "show_video_background_mobile": true,
+        "color_scheme": "color__bg-overlay-1 color__text",
+        "color_text": "color__light",
+        "color_border": "color__border-divider-1",
+        "enable_gradient": true,
+        "style_border": "border--b-width",
+        "layout_y_spacing": "min-h-[350px] md:min-h-[450px]",
+        "layout_y_alignment": "items-end",
+        "layout_x_alignment": "justify-center text-center",
+        "visibility": ""
+      }
+    },
+    "newsletter_LxbmEd": {
+      "type": "newsletter",
+      "blocks": {
+        "image_GrWwnp": {
+          "type": "image",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Email_aefa27a5-715a-4d5d-b6d4-25cd7fa9cb38.svg",
+            "layout_desktop_width": 2,
+            "layout_mobile_width": 6
+          }
+        },
+        "newsletter_WzRRfp": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "訂閱電子報",
+            "content": "<p>第一時間獲取最新優惠、寵物健康貼士及專業推薦，讓您的毛孩獲得最貼心的照顧！</p>",
+            "button_label": "Subscribe",
+            "disclaimer": "",
+            "success": "<p>Success! You’ve been subscribed.</p>",
+            "layout_desktop_width": 8,
+            "layout_mobile_width": 12,
+            "layout_x_alignment": "justify-between"
+          }
+        }
+      },
+      "block_order": [
+        "image_GrWwnp",
+        "newsletter_WzRRfp"
+      ],
+      "custom_css": [
+        "#customer_email {background-color: #f1ede7; color: #252525;}",
+        "#customer_email::placeholder {color: #726f60; opacity: 1;}"
+      ],
+      "settings": {
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-secondary color__secondary",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "justify-center",
+        "visibility": ""
+      }
     }
   },
   "order": [
-    "navigation_slider_qjE3yV",
     "slideshow_bemzQ7",
+    "navigation_slider_qjE3yV",
+    "text_r9cn7X",
     "content_slider_RabNXQ",
     "collection_slider_zcHUW9",
-    "product_slider_cdyq3P"
+    "icon_grid_CDEwhL",
+    "product_slider_cdyq3P",
+    "product_grid_dXNX3w",
+    "banner_LBdArg",
+    "newsletter_LxbmEd"
   ]
 }

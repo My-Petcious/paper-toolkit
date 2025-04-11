@@ -56,22 +56,12 @@
             "color_border": "color__border-divider-1",
             "style_border": ""
           }
-        },
-        "f5ee0741-2dcf-40c5-8755-319620ca5fa2": {
-          "type": "comment",
-          "settings": {
-            "spacing_top": 50,
-            "spacing_bottom": 0,
-            "color_border": "color__border-divider-1",
-            "style_border": ""
-          }
         }
       },
       "block_order": [
         "6d44e560-358d-4232-8708-502806610136",
         "821a01e2-b9bf-45dc-b208-835bf9ac938c",
-        "797ba560-2717-42ee-a1dc-547f7f40f214",
-        "f5ee0741-2dcf-40c5-8755-319620ca5fa2"
+        "797ba560-2717-42ee-a1dc-547f7f40f214"
       ],
       "settings": {
         "spacing_top": 0,
@@ -80,7 +70,6 @@
       }
     }
   },
-  
   "order": [
     "banner",
     "main"

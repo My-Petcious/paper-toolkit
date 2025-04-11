@@ -1,21 +1,21 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16558222329618bae3": {
       "type": "blog__banner",
       "settings": {
         "show_video_background_mobile": true,
-        "content": "<p>Share information about your blog with your customers. Describe the type of content people can expect to find.<\/p>",
+        "content": "<p>破解常見寵物飼養迷思，讓你成為更可靠的寵物主人</p>",
         "button_label": "",
-        "button_url": "shopify:\/\/collections\/all",
+        "button_url": "shopify://collections/all",
         "color_scheme": "color__bg-body color__text",
         "color_text": "color__text",
         "color_border": "color__border-divider-1",

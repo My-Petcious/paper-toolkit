@@ -555,7 +555,7 @@ const search = {
       this.search_items_queries = [];
       return;
     }
-    const requestUrl = `${window.Shopify.routes.root}search/suggest.json?q=${this.search_term}&resources[type]=${buildResources()}&resources[limit]=6&resources[options][fields]=${buildParams()}`;
+    const requestUrl = `/en/search/suggest.json?q=${this.search_term}&resources[type]=${buildResources()}&resources[limit]=6&resources[options][fields]=${buildParams()}`;
     try {
       const response = await fetch(requestUrl);
       if (!response.ok) {

@@ -6,5 +6,5 @@
 {% if path == "/src/entrypoints/main.js" or path == "main.js" %}
   <script src="{{ 'main-ffbcd5fd.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% elsif path == "/src/entrypoints/styles.css" or path == "styles.css" %}
-  {{ 'styles-7dea61d7.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
+  {{ 'styles-18c9aae3.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
 {% endif %}

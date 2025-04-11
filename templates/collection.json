@@ -27,52 +27,12 @@
     },
     "grid": {
       "type": "collection__main",
-      "blocks": {
-        "e697d97e-8310-4ca0-adeb-54d7222e15c1": {
-          "type": "newsletter",
-          "settings": {
-            "index": 7,
-            "heading": "",
-            "content": "<p>Tell customers why they should subscribe to your newsletter.</p>",
-            "button_label": "Subscribe",
-            "disclaimer": "",
-            "success": "<p>Success! You’ve been subscribed.</p>",
-            "background_color_scheme": "color__bg-overlay-1 color__text",
-            "color_border": "border--width color__border-divider-1",
-            "color_button": "btn btn--secondary",
-            "column_size": "col-span-2"
-          }
-        },
-        "0f716542-eff1-4b59-a9c9-c47955447221": {
-          "type": "content",
-          "settings": {
-            "index": 3,
-            "url": "",
-            "heading": "",
-            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
-            "button_label": "Button",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "background_color_scheme": "color__bg-overlay-1 color__text",
-            "color_border": "border--width color__border-divider-1",
-            "color_button": "btn btn--secondary",
-            "column_size": "col-span-2",
-            "layout_x_alignment": "text-left",
-            "layout_y_alignment": "justify-end"
-          }
-        }
-      },
-      "block_order": [
-        "e697d97e-8310-4ca0-adeb-54d7222e15c1",
-        "0f716542-eff1-4b59-a9c9-c47955447221"
-      ],
       "settings": {
         "spacing_top": 20,
         "spacing_bottom": 20,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
-        "filter_placement": "top",
+        "filter_placement": "side",
         "row_size_desktop": "md:grid-cols-4",
         "row_size_mobile": "grid-cols-2",
         "enable_sort": true,
@@ -92,55 +52,11 @@
         "style_border": "border--t-width",
         "visibility": ""
       }
-    },
-    "product_grid_aKepbD": {
-      "type": "product-grid",
-      "blocks": {
-        "card_mQwnCm": {
-          "type": "card",
-          "settings": {
-            "url": "/collections/all",
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
-            "button_label": "Button",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "index": 2,
-            "background_color_scheme": "color__bg-body color__text",
-            "color_border": "border--width color__border-divider-1",
-            "color_button": "btn btn--secondary",
-            "column_size": "col-span-1"
-          }
-        }
-      },
-      "block_order": [
-        "card_mQwnCm"
-      ],
-      "settings": {
-        "collection": "",
-        "products_count": 7,
-        "heading": "Product grid",
-        "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-        "button_label": "Button",
-        "button_url": "/collections/all",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "row_size_desktop": "md:grid-cols-4",
-        "row_size_mobile": "grid grid-cols-2",
-        "layout_x_alignment": "justify-between",
-        "visibility": ""
-      }
     }
   },
   "order": [
     "banner",
     "grid",
-    "recent",
-    "product_grid_aKepbD"
+    "recent"
   ]
 }
