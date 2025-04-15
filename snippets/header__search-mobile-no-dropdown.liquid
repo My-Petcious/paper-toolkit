@@ -87,13 +87,11 @@
           x-transition:leave-end="opacity-0"
         {% endif %}
         x-cloak>
-        <div class="flex flex-wrap h-full px-4 -mx-4 overflow-y-auto">
-          <div class="h-[50vh] w-full overflow-y-auto">
-            <div class="p-4">
-              <button type="submit" class="btn btn--primary w-full">
-                {{ 'actions.search' | t }}
-              </button>
-            </div>
+        <div class="flex flex-col h-full">
+          <div class="p-4 flex">
+            <button type="submit" class="btn btn--primary w-full flex-1 min-w-full">
+              {{ 'actions.search' | t }}
+            </button>
           </div>
         </div>
       </div>
