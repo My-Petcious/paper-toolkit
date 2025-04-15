@@ -187,7 +187,7 @@
 
 {% capture desktop_search %}
   {% if section.settings.enable_search %}
-    {% render 'header__search-desktop' %} 
+    {% render 'header__search-desktop-no-dropdown' %} 
   {% endif %}
 {% endcapture %}
 
@@ -334,7 +334,7 @@
 
 {% capture desktop_search %}
   {% if section.settings.enable_search %}
-    {% render 'header__search-desktop' %} 
+    {% render 'header__search-desktop-no-dropdown' %} 
   {% endif %}
 {% endcapture %}
 
