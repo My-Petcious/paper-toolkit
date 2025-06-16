@@ -12,6 +12,96 @@
     "slideshow_bemzQ7": {
       "type": "slideshow",
       "blocks": {
+        "slide_BcnraC": {
+          "type": "slide",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/11.png",
+            "image_background_mobile": "shopify://shop_images/Pet_fair_2_mobile_banner.png",
+            "show_entire_image": false,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "立即搶購",
+            "button_url": "shopify://blogs/news/2025線上寵物展激安優惠",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_WncdpU": {
+          "type": "slide",
+          "name": "Royal Canin giveaway",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/RC_giveaway_promotion_banner.png",
+            "image_background_mobile": "shopify://shop_images/RC_giveaway_mobile_banner.png",
+            "show_entire_image": false,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn btn--secondary",
+            "button_label": "立即選購",
+            "button_url": "shopify://collections/royal-canin",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_yGitnR": {
+          "type": "slide",
+          "name": "Canagan",
+          "disabled": true,
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/Canagan_15off_main_banner.png",
+            "image_background_mobile": "shopify://shop_images/Canagan_15off_mobile_banner.png",
+            "show_entire_image": false,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "立即選購",
+            "button_url": "shopify://collections/canagan",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_qRJeHV": {
+          "type": "slide",
+          "name": "Dog skin diease",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/Dog_Skin_diease_main_banner.png",
+            "image_background_mobile": "shopify://shop_images/Dog_skin_diease_mobile_banner.png",
+            "show_entire_image": false,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "按此了解",
+            "button_url": "https://mypetcious.com/blogs/%E7%8D%B8%E9%86%AB%E5%B0%88%E5%8D%80/%E7%8B%97%E7%8B%97%E7%9A%AE%E8%86%9A%E7%B4%85%E8%85%AB-%E7%94%A9%E6%AF%9B-%E4%B8%8D%E5%81%9C%E6%8A%93%E7%99%A2%E6%80%8E%E9%BA%BC%E8%BE%A6-%E7%8B%97%E7%8B%97%E7%9A%AE%E8%86%9A%E7%97%85%E7%97%87%E7%8B%80-%E5%8E%9F%E5%9B%A0%E8%88%87%E6%97%A5%E5%B8%B8%E8%AD%B7%E7%90%86%E6%8C%87%E5%8D%97",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_TQMKPx": {
+          "type": "slide",
+          "name": "Deworm",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/blog_main_banner.png",
+            "image_background_mobile": "shopify://shop_images/My_Petcious_mobile_banner_v2.png",
+            "show_entire_image": false,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "按此了解",
+            "button_url": "https://mypetcious.com/blogs/%E7%8D%B8%E9%86%AB%E5%B0%88%E5%8D%80/%E7%8B%97%E7%8B%97%E9%A0%AD%E8%99%9F%E5%AF%84%E7%94%9F%E8%9F%B2%E5%A4%A7%E6%95%B5-%E7%89%9B%E8%9C%B1-%E5%A3%81%E8%9D%A8-%E7%9A%84%E9%A0%90%E9%98%B2%E8%88%87%E6%B2%BB%E7%99%82%E5%85%A8%E6%94%BB%E7%95%A5-my-petcious",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
         "slide_QrpVf7": {
           "type": "slide",
           "settings": {
@@ -31,6 +121,11 @@
         }
       },
       "block_order": [
+        "slide_BcnraC",
+        "slide_WncdpU",
+        "slide_yGitnR",
+        "slide_qRJeHV",
+        "slide_TQMKPx",
         "slide_QrpVf7"
       ],
       "settings": {
@@ -43,7 +138,7 @@
         "layout_y_alignment": "items-center",
         "layout_x_alignment": "justify-center text-center",
         "visibility": "",
-        "auto_scroll_delay": 5,
+        "auto_scroll_delay": 10,
         "auto_scroll": true
       }
     },
@@ -66,11 +161,19 @@
             "url": "shopify://collections/貓貓專區"
           }
         },
+        "slide_VVzPg9": {
+          "type": "slide",
+          "settings": {
+            "image_featured": "shopify://shop_images/MyPetcious_Icons_Food_68827527-61ff-4ea2-b412-51bc6dc2623d.png",
+            "heading": "獸醫處方糧",
+            "url": "https://mypetcious.com/collections/%E7%8D%B8%E9%86%AB%E8%99%95%E6%96%B9%E7%B3%A7"
+          }
+        },
         "slide_qnD7hm": {
           "type": "slide",
           "settings": {
             "image_featured": "shopify://shop_images/MyPetcious_Icons_FoodProducts_2a3ee43a-a9a4-409b-8cc9-e04e1f158d45.svg",
-            "heading": "主糧",
+            "heading": "一般主糧",
             "url": "shopify://collections/一般乾糧"
           }
         },
@@ -102,6 +205,7 @@
       "block_order": [
         "slide_83n4jt",
         "slide_TXdDg6",
+        "slide_VVzPg9",
         "slide_qnD7hm",
         "slide_Grjyn9",
         "slide_gedtLg",
@@ -119,166 +223,24 @@
         "visibility": "md:hidden"
       }
     },
-    "text_r9cn7X": {
-      "type": "text",
+    "product_featured_VELtib": {
+      "type": "product-featured",
+      "name": "t:sections.product_featured.name",
       "settings": {
-        "heading": "About My Petcious",
-        "content": "<p>My Petcious 提供獸醫認可的優質寵物用品與專業健康指導，涵蓋處方糧、營養補充品及獸醫知識，幫助飼主安心選擇最佳照護方案，讓寵物更健康、更幸福。</p>",
-        "button_label": "關於我們",
-        "button_url": "shopify://pages/關於-my-petcious",
-        "spacing_top": 60,
-        "spacing_bottom": 60,
-        "color_scheme": "color__bg-body color__text",
-        "color_border": "color__border-divider-1",
-        "color_button": "btn btn--secondary",
-        "style_border": "border--b-width",
-        "layout_x_alignment": "text-center justify-center",
-        "visibility": ""
-      }
-    },
-    "content_slider_RabNXQ": {
-      "type": "content-slider",
-      "blocks": {
-        "content_iAab9z": {
-          "type": "content",
-          "settings": {
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or inform customers about a promotion.</p>",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "button_label": "Button",
-            "button_url": "shopify://collections/all",
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "color__border-divider-1",
-            "color_text": "color__text",
-            "color_button": "btn btn--secondary",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-end content-end",
-            "layout_x_alignment": "",
-            "layout_desktop_width": 6,
-            "layout_mobile_width": 10
-          }
-        },
-        "content_GpnF7g": {
-          "type": "content",
-          "settings": {
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "button_label": "Button",
-            "button_url": "/",
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "color__border-divider-1",
-            "color_text": "color__text",
-            "color_button": "btn",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-start content-start",
-            "layout_x_alignment": "",
-            "layout_desktop_width": 5,
-            "layout_mobile_width": 8
-          }
-        },
-        "content_FyaHLD": {
-          "type": "content",
-          "settings": {
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "button_label": "Button",
-            "button_url": "/",
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "color__border-divider-1",
-            "color_text": "color__text",
-            "color_button": "btn",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-start content-start",
-            "layout_x_alignment": "",
-            "layout_desktop_width": 5,
-            "layout_mobile_width": 8
-          }
-        },
-        "content_xTfzPq": {
-          "type": "content",
-          "settings": {
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "button_label": "Button",
-            "button_url": "/",
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "color__border-divider-1",
-            "color_text": "color__text",
-            "color_button": "btn",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-start content-start",
-            "layout_x_alignment": "",
-            "layout_desktop_width": 5,
-            "layout_mobile_width": 8
-          }
-        },
-        "content_3V6CyG": {
-          "type": "content",
-          "settings": {
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "button_label": "Button",
-            "button_url": "/",
-            "spacing_top": 80,
-            "spacing_bottom": 0,
-            "enable_padding": true,
-            "color_scheme": "color__bg-body color__text",
-            "color_border": "color__border-divider-1",
-            "color_text": "color__text",
-            "color_button": "btn",
-            "enable_gradient": false,
-            "layout_y_alignment": "items-start content-start",
-            "layout_x_alignment": "",
-            "layout_desktop_width": 5,
-            "layout_mobile_width": 8
-          }
-        }
-      },
-      "block_order": [
-        "content_iAab9z",
-        "content_GpnF7g",
-        "content_FyaHLD",
-        "content_xTfzPq",
-        "content_3V6CyG"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Block heading",
-        "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-        "button_label": "Button label",
-        "button_url": "/",
+        "collection": "優惠特區",
+        "products_count": 4,
+        "heading": "{{ section.settings.collection.title }}",
+        "content": "<p>優惠產品不定時更新，優惠數量有限，欲購從速！</p>",
+        "button_label": "查看更多",
+        "button_url": "shopify://collections/優惠特區",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
         "layout_x_alignment": "justify-between",
         "visibility": ""
       }
@@ -289,14 +251,16 @@
         "collection": [
           "狗狗專區",
           "貓貓專區",
+          "獸醫處方糧",
           "主糧",
           "保健品及補充品",
-          "用品及玩具"
+          "用品及玩具",
+          "美容及清潔護理"
         ],
         "heading": "產品分類",
         "content": "<p>探索各式各樣的專業寵物護理產品，滿足每隻寵物的需求</p>",
-        "button_label": "查看更多",
-        "button_url": "shopify://collections",
+        "button_label": "",
+        "button_url": "",
         "spacing_top": 60,
         "spacing_bottom": 60,
         "color_scheme": "color__bg-body color__text",
@@ -387,48 +351,36 @@
         "visibility": ""
       }
     },
-    "product_slider_cdyq3P": {
-      "type": "product-slider",
-      "blocks": {
-        "card_GxP4XM": {
-          "type": "card",
-          "settings": {
-            "url": "/",
-            "heading": "Block heading",
-            "content": "<p>Describe a product, make announcements, or welcome customers to your store.</p>",
-            "button_label": "Button",
-            "enable_autoplay": true,
-            "enable_mute_toggle": true,
-            "enable_loop": true,
-            "index": 2,
-            "background_color_scheme": "color__bg-body color__text",
-            "color_border": "border--width color__border-divider-1",
-            "color_button": "btn btn--secondary",
-            "column_size": "col-span-1"
-          }
-        }
-      },
-      "block_order": [
-        "card_GxP4XM"
-      ],
-      "disabled": true,
+    "collection_slider_98rKEH": {
+      "type": "collection-slider",
+      "name": "Brand Slider",
       "settings": {
-        "collection": "保健品及補充品",
-        "products_count": 7,
-        "heading": "熱賣產品",
-        "content": "<p>精選最受歡迎的寵物用品，經獸醫認可，品質安心，守護您的毛孩健康！</p>",
-        "button_label": "查看更多",
-        "button_url": "/collections/all",
+        "collection": [
+          "royal-canin",
+          "purina",
+          "vetlife",
+          "kakato",
+          "orijen",
+          "stella-chewys",
+          "protexin",
+          "ziwipeak",
+          "canagan"
+        ],
+        "heading": "精選優質品牌",
+        "content": "<p>My Petcious為你搜羅全球各大知名品牌寵物糧、處方糧、寵物補健品及寵物護理護理用品，保證你一定能找到最適合你愛寵需要的優質產品。</p>",
+        "button_label": "",
+        "button_url": "",
         "spacing_top": 100,
         "spacing_bottom": 100,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
         "style_border": "border--b-width",
+        "layout_x_alignment": "justify-between",
         "card_width_mobile": 8,
         "card_width_desktop": 3,
-        "layout_x_alignment": "justify-between",
-        "visibility": ""
+        "visibility": "",
+        "enable_collection_size_count": true
       }
     },
     "product_grid_dXNX3w": {
@@ -449,6 +401,23 @@
         "row_size_desktop": "md:grid-cols-4",
         "row_size_mobile": "grid grid-cols-2",
         "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "text_r9cn7X": {
+      "type": "text",
+      "settings": {
+        "heading": "About My Petcious",
+        "content": "<p>My Petcious 提供獸醫認可的優質寵物用品與產品專業推薦，保證出售的所有產品均為行貨及符合獸醫標準。<br/>涵蓋處方糧、營養補充品及獸醫知識，幫助飼主安心選擇最佳照護方案，讓寵物更健康、更幸福。</p>",
+        "button_label": "關於我們",
+        "button_url": "shopify://pages/關於-my-petcious",
+        "spacing_top": 60,
+        "spacing_bottom": 60,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "layout_x_alignment": "text-center justify-center",
         "visibility": ""
       }
     },
@@ -522,12 +491,12 @@
   "order": [
     "slideshow_bemzQ7",
     "navigation_slider_qjE3yV",
-    "text_r9cn7X",
-    "content_slider_RabNXQ",
+    "product_featured_VELtib",
     "collection_slider_zcHUW9",
     "icon_grid_CDEwhL",
-    "product_slider_cdyq3P",
+    "collection_slider_98rKEH",
     "product_grid_dXNX3w",
+    "text_r9cn7X",
     "banner_LBdArg",
     "newsletter_LxbmEd"
   ]

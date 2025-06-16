@@ -86,7 +86,7 @@
         "b78b560b-e1c2-428d-ad73-fb5f8aac6d53": {
           "type": "add",
           "settings": {
-            "content": "<p>Remind customers of offers like free shipping and lifetime warranties.</p>",
+            "content": "<p>如有任何查詢，請WhatsApp <a href=\"https://wa.me/85293107104\" target=\"_blank\" title=\"https://wa.me/85293107104\">93107104</a>或電郵<a href=\"/pages/contact\" target=\"_blank\" title=\"聯絡我們\">contact@mypetcious.com</a></p>",
             "spacing_top": 20,
             "spacing_bottom": 20,
             "color_scheme": "color__bg-body color__text",

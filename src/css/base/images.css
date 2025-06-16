@@ -8,6 +8,6 @@
   }
   img:after {
     @apply z-10 items-center justify-center hidden md:absolute md:type--smaller md:top-0 md:flex md:flex-col md:justify-center md:w-full md:h-full md:p-4 md:text-center md:whitespace-normal color__text color__bg-overlay-1;
-    content: "" attr(alt) !important;
+    content: "" !important;
   }
 }

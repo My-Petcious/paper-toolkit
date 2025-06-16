@@ -17,7 +17,13 @@
         "f2232503-8685-46db-aaf1-b796c5ea14f9": {
           "type": "text",
           "settings": {
-            "content": "<p>新張優惠全單9折</p>"
+            "content": "<p><a href=\"https://mypetcious.com/blogs/news/2025%E7%B7%9A%E4%B8%8A%E5%AF%B5%E7%89%A9%E5%B1%95%E6%BF%80%E5%AE%89%E5%84%AA%E6%83%A0\" target=\"_blank\" title=\"2025寵物展優惠\">線上寵物展激安優惠活動進行中！</a></p>"
+          }
+        },
+        "text_G99Dy3": {
+          "type": "text",
+          "settings": {
+            "content": "<p>全單即時折扣低至85折！</p>"
           }
         },
         "text_P6Pixx": {
@@ -29,6 +35,7 @@
       },
       "block_order": [
         "f2232503-8685-46db-aaf1-b796c5ea14f9",
+        "text_G99Dy3",
         "text_P6Pixx"
       ],
       "settings": {

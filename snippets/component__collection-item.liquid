@@ -107,7 +107,7 @@
     {% endif %}
     {% if settings.collection_card_enable_description and collection.description != blank %}
       <div class="mb-0 type--small !leading-tight">
-        {{ collection.description | strip_html | truncate: 256 }}
+        {{ collection.description | strip_html | truncate: 50 }}
       </div>
     {% endif %}
   </a>
