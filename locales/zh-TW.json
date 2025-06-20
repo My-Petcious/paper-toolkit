@@ -218,7 +218,7 @@
     "tax_included": "含稅。",
     "qr_image_alt": "QR 碼 - 掃描即可兌換禮品卡",
     "view_in_space_explanation": "在您的空間中查看，在擴增實境視窗中載入項目",
-    "will_be_powered_by_html": "本店將由{{ shopify }}提供支持",
+    "will_be_powered_by_html": "",
     "you_must_agree": "您必須同意銷售條款和條件才能結帳",
     "you_save_amount": "您節省了{{ saved_amount }}"
   },

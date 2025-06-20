@@ -28,7 +28,7 @@
 {% endcomment %}
 
 {% liquid
-  assign alt = ''
+  assign alt = image.alt | escape
 %}
 
 {% capture adjusted_image_class %}

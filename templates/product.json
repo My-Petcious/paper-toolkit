@@ -149,7 +149,7 @@
         "848f5aea-f7ad-4974-a5fb-020776e3e523": {
           "type": "stickyadd",
           "settings": {
-            "content": "<p>Remind customers of offers like free shipping and lifetime warranties.</p>",
+            "content": "",
             "color_scheme": "color__bg-overlay-1 color__text",
             "color_border": "color__border-divider-1",
             "color_button": "btn",
@@ -189,7 +189,7 @@
         "media_ratio": "aspect-[1/1] aspect-w-1 aspect-h-1",
         "media_object_sizing": "cover",
         "enable_ratio": true,
-        "enable_alt": true,
+        "enable_alt": false,
         "color_scheme": "color__bg-body",
         "color_border": "color__border-divider-1",
         "layout_gallery_size": "w-full md:w-1/2"
