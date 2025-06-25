@@ -5,10 +5,25 @@
     {{ settings.layout_horizontal }}
     {{ settings.layout_alignment }}">
 
-    <div class="w-full mb-8">
+    <div class="w-full mb-8" x-data="{ 
+      points:0,
+      smile_ui_loaded: false,
+      init(){
+        document.addEventListener('smile-ui-loaded', () => {
+          this.points = Smile.customer.points_balance;
+          this.smile_ui_loaded = true;
+        });
+      }
+    }">
       <h1>
         {{ 'labels.account' | t }}
       </h1>
+
+      <p x-show="smile_ui_loaded">
+        You have <span x-text="points"></span> points.
+      </p>
+
+      <a href="{{ routes.root_url }}" class="btn btn--plain btn--smaller">/a>
 
       <a href="{{ routes.account_logout_url }}" class="btn btn--plain btn--smaller">{{ 'actions.log_out' | t }}</a>
     </div>
