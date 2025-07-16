@@ -23,7 +23,8 @@
         You have <span x-text="smile.customer.points_balance"></span> points.
       </p>
 
-      <button @click="smile_ui.openPanel({ deep_link: 'points_products' })" class="btn btn--plain btn--smaller">Open Points Modal</button>
+      <button @click="smile_ui.openPanel({ deep_link: 'points_product:1' })" class="btn btn--plain btn--smaller">Open Points Modal</button>
+
 
       <a href="{{ routes.account_logout_url }}" class="btn btn--plain btn--smaller">{{ 'actions.log_out' | t }}</a>
     </div>
