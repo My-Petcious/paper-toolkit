@@ -12,72 +12,88 @@
     "slideshow_bemzQ7": {
       "type": "slideshow",
       "blocks": {
-        "slide_NyHbpb": {
+        "slide_ziabjk": {
           "type": "slide",
           "settings": {
-            "image_background_desktop": "shopify://shop_images/June_promotion_main_banner.png",
-            "image_background_mobile": "shopify://shop_images/June_promotion_mobile.png",
-            "show_entire_image": false,
-            "show_video_background_mobile": true,
-            "heading": "",
-            "content": "",
-            "button_color": "btn",
-            "button_label": "",
-            "button_url": "shopify://collections/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "",
-            "secondary_button_url": "shopify://collections/all"
-          }
-        },
-        "slide_WncdpU": {
-          "type": "slide",
-          "name": "Royal Canin giveaway",
-          "settings": {
-            "image_background_desktop": "shopify://shop_images/RC_giveaway_promotion_banner.png",
-            "image_background_mobile": "shopify://shop_images/RC_giveaway_mobile_banner.png",
-            "show_entire_image": false,
-            "show_video_background_mobile": true,
-            "heading": "",
-            "content": "",
-            "button_color": "btn btn--secondary",
-            "button_label": "立即選購",
-            "button_url": "shopify://collections/royal-canin",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "",
-            "secondary_button_url": "shopify://collections/all"
-          }
-        },
-        "slide_cYghiq": {
-          "type": "slide",
-          "name": "Kakato",
-          "settings": {
-            "image_background_desktop": "shopify://shop_images/Kakato_main_banner_70942df5-2ed6-4cc2-9c69-df359652185a.png",
-            "image_background_mobile": "shopify://shop_images/Kakato_mobile_banner_967c49ab-fb4f-4caf-9955-1e3a9cab9a0b.png",
-            "show_entire_image": false,
+            "image_background_desktop": "shopify://shop_images/PD_promotion_main_banner_d7a95fbf-e502-4ee7-b300-2dccd880610a.png",
+            "image_background_mobile": "shopify://shop_images/PD_promotion_mobile_banner_b501a65a-657d-4cd5-81fb-d5cb0adacfe3.png",
+            "show_entire_image": true,
             "show_video_background_mobile": true,
             "heading": "",
             "content": "",
             "button_color": "btn",
             "button_label": "立即購買",
-            "button_url": "shopify://collections/kakato",
+            "button_url": "shopify://collections/獸醫處方糧",
+            "secondary_button_color": "btn btn--secondary",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/獸醫處方貓糧"
+          }
+        },
+        "slide_zDtUKx": {
+          "type": "slide",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/90_off_promotion_banner.png",
+            "image_background_mobile": "shopify://shop_images/90_off_mobile_banner.png",
+            "show_entire_image": true,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "立即搶購",
+            "button_url": "shopify://collections/1折加購專區",
             "secondary_button_color": "btn btn--neutral",
             "secondary_button_label": "",
             "secondary_button_url": "shopify://collections/all"
           }
         },
-        "slide_yGitnR": {
+        "slide_VmDTR4": {
           "type": "slide",
-          "name": "Canagan",
           "settings": {
-            "image_background_desktop": "shopify://shop_images/Canagan_15off_main_banner.png",
-            "image_background_mobile": "shopify://shop_images/Canagan_15off_mobile_banner.png",
-            "show_entire_image": false,
+            "image_background_desktop": "shopify://shop_images/GI_promotion_manin_banner.png",
+            "image_background_mobile": "shopify://shop_images/GI_promotion_mo_banner.png",
+            "show_entire_image": true,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "<p>             </p>",
+            "button_color": "btn btn--secondary",
+            "button_label": "狗狗",
+            "button_url": "shopify://collections/狗狗益生菌-腸道健康",
+            "secondary_button_color": "btn",
+            "secondary_button_label": "貓貓",
+            "secondary_button_url": "shopify://collections/貓貓益生菌-腸道健康"
+          }
+        },
+        "slide_CgDGLx": {
+          "type": "slide",
+          "name": "Deworm promotion",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/Deworn_promotion_main_banner.png",
+            "image_background_mobile": "shopify://shop_images/Deworn_promotion_mobile_banner.png",
+            "show_entire_image": true,
             "show_video_background_mobile": true,
             "heading": "",
             "content": "",
             "button_color": "btn",
-            "button_label": "立即選購",
-            "button_url": "shopify://collections/canagan",
+            "button_label": "立即購買",
+            "button_url": "shopify://collections/驅蟲及杜蟲產品",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_hE3iXh": {
+          "type": "slide",
+          "name": "Cat Renal diets",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/Cat_renal_main_banner.png",
+            "image_background_mobile": "shopify://shop_images/cat_renal_mobile_banner.png",
+            "show_entire_image": true,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "了解更多",
+            "button_url": "shopify://blogs/獸醫專區/貓咪腎臟疾病-預防-識別與照護",
             "secondary_button_color": "btn btn--neutral",
             "secondary_button_label": "",
             "secondary_button_url": "shopify://collections/all"
@@ -89,7 +105,7 @@
           "settings": {
             "image_background_desktop": "shopify://shop_images/Dog_Skin_diease_main_banner.png",
             "image_background_mobile": "shopify://shop_images/Dog_skin_diease_mobile_banner.png",
-            "show_entire_image": false,
+            "show_entire_image": true,
             "show_video_background_mobile": true,
             "heading": "",
             "content": "",
@@ -107,7 +123,7 @@
           "settings": {
             "image_background_desktop": "shopify://shop_images/blog_main_banner.png",
             "image_background_mobile": "shopify://shop_images/My_Petcious_mobile_banner_v2.png",
-            "show_entire_image": false,
+            "show_entire_image": true,
             "show_video_background_mobile": true,
             "heading": "",
             "content": "",
@@ -124,7 +140,7 @@
           "settings": {
             "image_background_desktop": "shopify://shop_images/MyPetciousBanner.png",
             "image_background_mobile": "shopify://shop_images/MyPetcious_Homepage_Banner_1.png",
-            "show_entire_image": false,
+            "show_entire_image": true,
             "show_video_background_mobile": false,
             "heading": "由專業獸醫團隊管理",
             "content": "<p>全天候照顧寵物所需</p>",
@@ -138,10 +154,11 @@
         }
       },
       "block_order": [
-        "slide_NyHbpb",
-        "slide_WncdpU",
-        "slide_cYghiq",
-        "slide_yGitnR",
+        "slide_ziabjk",
+        "slide_zDtUKx",
+        "slide_VmDTR4",
+        "slide_CgDGLx",
+        "slide_hE3iXh",
         "slide_qRJeHV",
         "slide_TQMKPx",
         "slide_QrpVf7"
@@ -241,9 +258,31 @@
         "visibility": "md:hidden"
       }
     },
+    "product_featured_6fYTD4": {
+      "type": "product-featured",
+      "name": "一折加購區",
+      "settings": {
+        "collection": "1折加購專區",
+        "products_count": 4,
+        "heading": "一折加購區",
+        "content": "<p>凡購物任何產品每滿$300，即可以一折優惠價錢加購以下產品一件。</p>",
+        "button_label": "更多",
+        "button_url": "shopify://collections/1折加購專區",
+        "spacing_top": 20,
+        "spacing_bottom": 20,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
     "product_featured_VELtib": {
       "type": "product-featured",
-      "name": "t:sections.product_featured.name",
+      "name": "特價專區",
       "settings": {
         "collection": "優惠特區",
         "products_count": 4,
@@ -251,8 +290,8 @@
         "content": "<p>優惠產品不定時更新，優惠數量有限，欲購從速！</p>",
         "button_label": "查看更多",
         "button_url": "shopify://collections/優惠特區",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
+        "spacing_top": 20,
+        "spacing_bottom": 0,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -279,8 +318,8 @@
         "content": "<p>探索各式各樣的專業寵物護理產品，滿足每隻寵物的需求</p>",
         "button_label": "",
         "button_url": "",
-        "spacing_top": 60,
-        "spacing_bottom": 60,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -357,8 +396,8 @@
         "content": "",
         "button_label": "",
         "button_url": "",
-        "spacing_top": 60,
-        "spacing_bottom": 60,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
         "color_scheme": "color__bg-secondary color__secondary",
         "color_border": "color__border-divider-1",
         "color_button": "btn",
@@ -388,8 +427,8 @@
         "content": "<p>My Petcious為你搜羅全球各大知名品牌寵物糧、處方糧、寵物補健品及寵物護理護理用品，保證你一定能找到最適合你愛寵需要的優質產品。</p>",
         "button_label": "",
         "button_url": "",
-        "spacing_top": 100,
-        "spacing_bottom": 100,
+        "spacing_top": 20,
+        "spacing_bottom": 0,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -410,8 +449,8 @@
         "content": "<p>精選最受歡迎的寵物用品，經獸醫認可，品質安心，守護您的毛孩健康！</p>",
         "button_label": "查看更多",
         "button_url": "shopify://collections/熱賣產品",
-        "spacing_top": 60,
-        "spacing_bottom": 60,
+        "spacing_top": 20,
+        "spacing_bottom": 20,
         "color_scheme": "color__bg-body color__text",
         "color_border": "color__border-divider-1",
         "color_button": "btn btn--secondary",
@@ -509,6 +548,7 @@
   "order": [
     "slideshow_bemzQ7",
     "navigation_slider_qjE3yV",
+    "product_featured_6fYTD4",
     "product_featured_VELtib",
     "collection_slider_zcHUW9",
     "icon_grid_CDEwhL",

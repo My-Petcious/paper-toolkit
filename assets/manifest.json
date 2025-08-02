@@ -1,19 +1,11 @@
 {
-  "node_modules/@stagewise/toolbar/dist/index.es.js": {
-    "file": "index.es-f95f1874.js",
-    "isDynamicEntry": true,
-    "src": "node_modules/@stagewise/toolbar/dist/index.es.js"
-  },
   "src/entrypoints/main.js": {
-    "dynamicImports": [
-      "node_modules/@stagewise/toolbar/dist/index.es.js"
-    ],
-    "file": "main-f5c27ec5.js",
+    "file": "main-ffbcd5fd.js",
     "isEntry": true,
     "src": "src/entrypoints/main.js"
   },
   "src/entrypoints/styles.css": {
-    "file": "styles-6b852287.css",
+    "file": "styles-18c9aae3.css",
     "isEntry": true,
     "src": "src/entrypoints/styles.css"
   }

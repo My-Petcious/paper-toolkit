@@ -17,7 +17,19 @@
         "text_G99Dy3": {
           "type": "text",
           "settings": {
-            "content": "<p>全店購物滿$800九折！</p>"
+            "content": "<p>全線獸醫處方糧低至8折！</p>"
+          }
+        },
+        "text_7rCP3g": {
+          "type": "text",
+          "settings": {
+            "content": "<p>益生菌及腸胃保健產品兩件85折！</p>"
+          }
+        },
+        "text_qDppXe": {
+          "type": "text",
+          "settings": {
+            "content": "<p>驅蟲產品買兩任何兩件85折！</p>"
           }
         },
         "text_P6Pixx": {
@@ -29,6 +41,8 @@
       },
       "block_order": [
         "text_G99Dy3",
+        "text_7rCP3g",
+        "text_qDppXe",
         "text_P6Pixx"
       ],
       "settings": {
