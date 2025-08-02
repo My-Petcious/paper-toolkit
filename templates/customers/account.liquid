@@ -5,136 +5,200 @@
     {{ settings.layout_horizontal }}
     {{ settings.layout_alignment }}">
 
-    <div class="w-full mb-8 flex flex-col items-center" x-data="{
-      smile: null,
-      smile_ui: null,
-      init(){
-        document.addEventListener('smile-ui-loaded', () => {
-          this.smile = Smile
-          this.smile_ui = SmileUI
-        });
-      }
-    }">
-      <h1 class="text-2xl font-bold">
-        會員積分及獎賞
-      </h1>
-      <p class="text-sm text-gray-500">
-        你現時有 <span x-text="smile.customer.points_balance"></span> 積分.
-      </p>
 
-      <button @click="smile_ui.openPanel({ deep_link: 'points_product:903352' })" class="btn btn--plain btn--smaller">立即換領</button>
 
-    </div>
-
-    <div class="flex flex-wrap items-start w-full pt-8 border--t-width color__border-divider-1 md:gap-x-16 md:gap-y-0 gap-y-8">
-      
-      <div class="w-full pb-8 md:w-auto border--b-width color__border-divider-1 grow">
-        <p class="mb-4 type__heading">
-          {{ 'labels.account_details' | t }}
-        </p>
-        <div class="mb-4 type--small">
-          <p class="mb-1">
-            {{ customer.name }}
-          </p>
-
-          <p class="mb-1">
-            {{ customer.email }}
-          </p>
-          {% if customer.default_address %}
-            <p class="mb-1">{{ customer.default_address.address1 }}</p>
-            {% if customer.default_address.address2 != blank %}
-              <p class="mb-1">{{ customer.default_address.address2 }}</p>
-            {% endif %}
-            <p class="mb-1">
-              {{ customer.default_address.city }}, 
-              {% if customer.default_address.province_code %}
-                {{ customer.default_address.province_code }}
-              {% endif %}
-              , {{ customer.default_address.country_code }}
-            </p>
-            <p class="mb-1">{{ customer.default_address.zip }}</p>
-            <p class="mb-0">{{ customer.default_address.phone }}</p>
-          {% endif %}
-        </div>
-        <div>
-          <a href="{{ routes.account_addresses_url }}" class="btn btn--plain btn--smaller">{{ 'actions.view_addresses' | t }} ({{ customer.addresses_count }})</a>
-        </div>
-
-        <a href="{{ routes.account_logout_url }}" class="btn btn--plain btn--smaller">{{ 'actions.log_out' | t }}</a>
+    <!-- Tabs Container -->
+    <div x-data="{ selectedTab: 'profile' }" class="w-full">
+      <!-- Tab Navigation -->
+      <div x-on:keydown.right.prevent="$focus.wrap().next()" 
+           x-on:keydown.left.prevent="$focus.wrap().previous()" 
+           class="flex border-b border-gray-200 mb-8" 
+           role="tablist" 
+           aria-label="Account sections">
         
+        <!-- Profile Tab -->
+        <button x-on:click="selectedTab = 'profile'" 
+                x-bind:aria-selected="selectedTab === 'profile'" 
+                x-bind:tabindex="selectedTab === 'profile' ? '0' : '-1'" 
+                x-bind:class="selectedTab === 'profile' ? 'color__border-selected-1 color__text' : 'border-transparent color__text opacity-75 hover:opacity-100 hover:color__border-divider-1'"
+                class="px-6 py-3 border-b-2 font-medium text-sm transition-colors duration-200" 
+                type="button" 
+                role="tab" 
+                aria-controls="tabpanelProfile">
+          Profile
+        </button>
+        
+        <!-- Orders Tab -->
+        <button x-on:click="selectedTab = 'orders'" 
+                x-bind:aria-selected="selectedTab === 'orders'" 
+                x-bind:tabindex="selectedTab === 'orders' ? '0' : '-1'" 
+                x-bind:class="selectedTab === 'orders' ? 'color__border-selected-1 color__text' : 'border-transparent color__text opacity-75 hover:opacity-100 hover:color__border-divider-1'"
+                class="px-6 py-3 border-b-2 font-medium text-sm transition-colors duration-200" 
+                type="button" 
+                role="tab" 
+                aria-controls="tabpanelOrders">
+          Orders
+        </button>
+        
+        <!-- Membership Tab -->
+        <button x-on:click="selectedTab = 'membership'" 
+                x-bind:aria-selected="selectedTab === 'membership'" 
+                x-bind:tabindex="selectedTab === 'membership' ? '0' : '-1'" 
+                x-bind:class="selectedTab === 'membership' ? 'color__border-selected-1 color__text' : 'border-transparent color__text opacity-75 hover:opacity-100 hover:color__border-divider-1'"
+                class="px-6 py-3 border-b-2 font-medium text-sm transition-colors duration-200" 
+                type="button" 
+                role="tab" 
+                aria-controls="tabpanelMembership">
+          Membership
+        </button>
       </div>
-      
-      <div class="w-full md:w-2/3 mx-auto">
-        <p class="mb-2 type__heading">
-          {{ 'labels.orders' | t }}
-        </p>
 
-        {% paginate customer.orders by 10 %}
+      <!-- Tab Panels -->
+      <div class="w-full">
         
-          <table class="min-w-full">
-            <tbody class="bg-white">
-
-              {% for order in customer.orders %}              
-                <tr class="py-2 border--b-width color__border-divider-1">
-                  <td class="py-4">
-                    {{ order.name | link_to: order.customer_url }}
-                    <dl class="m-0">
-                      <dd class="m-0 truncate opacity-75 type--small">{{ order.line_items.size }} items</dd>
-                    </dl>
-                    <dl class="m-0 md:hidden">
-                      <dd class="mt-1 mb-0 truncate">
-                        {{ order.total_net_amount | money }}
-                      </dd>
-                      <dd class="mt-1 mb-0 truncate">
-                        {{ order.created_at | date: format: 'abbreviated_date' }}
-                      </dd>
-                    </dl>
-                  </td>
-                  <td class="hidden py-4 align-bottom md:table-cell">{{ order.total_net_amount | money }}</td>
-                  <td class="hidden py-4 align-bottom md:table-cell">{{ order.created_at | date: format: 'abbreviated_date' }}</td>
-                  <td class="py-4 text-right align-bottom">
-                    {% render 'component__badge', 
-                      color: '',
-                      icon: '',
-                      content: order.financial_status %}
-                    {% render 'component__badge', 
-                      color: '',
-                      icon: '',
-                      content: order.fulfillment_status %}
-                    {% assign reorder_url = "" %}
-                    {% for line_item in order.line_items %}
-                      {% capture reorder_url %}{{ reorder_url | append: line_item.variant_id | append: ':' | append: line_item.quantity | append: ',' }}{% endcapture %}
-                    {% endfor %}
-                    <a href="{{ '/cart/' | append: reorder_url }}" class="btn btn--smaller btn--secondary">Reorder</a>
-                  </td>
-                </tr>
-              {% endfor %}
-
-            </tbody>
-          </table>
-          
-          <section class="py-4 mt-8">
-            <div class="mb-4 text-center">
-                <span>{{ 'labels.showing' | t }}</span>
-                <span>{{ paginate.current_page }}</span>
-                {{ 'labels.of' | t }}
-                <span>{{ paginate.pages }}</span>
+        <!-- Profile Tab Panel -->
+        <div x-cloak x-show="selectedTab === 'profile'" 
+             id="tabpanelProfile" 
+             role="tabpanel" 
+             aria-label="profile">
+          <div class="flex flex-wrap items-start w-full pt-8 md:gap-x-16 md:gap-y-0 gap-y-8">
+            <div class="w-full pb-8 md:w-auto border--b-width color__border-divider-1 grow">
+              <p class="mb-4 type__heading">
+                {{ 'labels.account_details' | t }}
+              </p>
+              <div class="mb-4 type--small">
+                <p class="mb-1">
+                  {{ customer.name }}
+                </p>
+                <p class="mb-1">
+                  {{ customer.email }}
+                </p>
+                {% if customer.default_address %}
+                  <p class="mb-1">{{ customer.default_address.address1 }}</p>
+                  {% if customer.default_address.address2 != blank %}
+                    <p class="mb-1">{{ customer.default_address.address2 }}</p>
+                  {% endif %}
+                  <p class="mb-1">
+                    {{ customer.default_address.city }}, 
+                    {% if customer.default_address.province_code %}
+                      {{ customer.default_address.province_code }}
+                    {% endif %}
+                    , {{ customer.default_address.country_code }}
+                  </p>
+                  <p class="mb-1">{{ customer.default_address.zip }}</p>
+                  <p class="mb-0">{{ customer.default_address.phone }}</p>
+                {% endif %}
               </div>
-            <div class="text-center">
-              {% if paginate.previous.is_link %}
-                <a class="btn btn--small btn--plain" href="{{ paginate.previous.url }}">{{ paginate.previous.title }}</a>
-              {% endif %}
-              {% if paginate.next.is_link %}
-                <a class="btn btn--small btn--plain" href="{{ paginate.next.url }}">{{ paginate.next.title }}</a>
-              {% endif %}
+              <div>
+                <a href="{{ routes.account_addresses_url }}" class="btn btn--plain btn--smaller">{{ 'actions.view_addresses' | t }} ({{ customer.addresses_count }})</a>
+              </div>
+              <a href="{{ routes.account_logout_url }}" class="btn btn--plain btn--smaller">{{ 'actions.log_out' | t }}</a>
             </div>
-          </section>
-          
-        {% endpaginate %}
+          </div>
+        </div>
 
+        <!-- Orders Tab Panel -->
+        <div x-cloak x-show="selectedTab === 'orders'" 
+             id="tabpanelOrders" 
+             role="tabpanel" 
+             aria-label="orders">
+          <div class="w-full">
+            <p class="mb-2 type__heading">
+              {{ 'labels.orders' | t }}
+            </p>
+
+            {% paginate customer.orders by 10 %}
+              <table class="min-w-full">
+                <tbody class="bg-white">
+                  {% for order in customer.orders %}              
+                    <tr class="py-2 border--b-width color__border-divider-1">
+                      <td class="py-4">
+                        {{ order.name | link_to: order.customer_url }}
+                        <dl class="m-0">
+                          <dd class="m-0 truncate opacity-75 type--small">{{ order.line_items.size }} items</dd>
+                        </dl>
+                        <dl class="m-0 md:hidden">
+                          <dd class="mt-1 mb-0 truncate">
+                            {{ order.total_net_amount | money }}
+                          </dd>
+                          <dd class="mt-1 mb-0 truncate">
+                            {{ order.created_at | date: format: 'abbreviated_date' }}
+                          </dd>
+                        </dl>
+                      </td>
+                      <td class="hidden py-4 align-bottom md:table-cell">{{ order.total_net_amount | money }}</td>
+                      <td class="hidden py-4 align-bottom md:table-cell">{{ order.created_at | date: format: 'abbreviated_date' }}</td>
+                      <td class="py-4 text-right align-bottom">
+                        {% render 'component__badge', 
+                          color: '',
+                          icon: '',
+                          content: order.financial_status %}
+                        {% render 'component__badge', 
+                          color: '',
+                          icon: '',
+                          content: order.fulfillment_status %}
+                        {% assign reorder_url = "" %}
+                        {% for line_item in order.line_items %}
+                          {% capture reorder_url %}{{ reorder_url | append: line_item.variant_id | append: ':' | append: line_item.quantity | append: ',' }}{% endcapture %}
+                        {% endfor %}
+                        <a href="{{ '/cart/' | append: reorder_url }}" class="btn btn--smaller btn--secondary">Reorder</a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              
+              <section class="py-4 mt-8">
+                <div class="mb-4 text-center">
+                  <span>{{ 'labels.showing' | t }}</span>
+                  <span>{{ paginate.current_page }}</span>
+                  {{ 'labels.of' | t }}
+                  <span>{{ paginate.pages }}</span>
+                </div>
+                <div class="text-center">
+                  {% if paginate.previous.is_link %}
+                    <a class="btn btn--small btn--plain" href="{{ paginate.previous.url }}">{{ paginate.previous.title }}</a>
+                  {% endif %}
+                  {% if paginate.next.is_link %}
+                    <a class="btn btn--small btn--plain" href="{{ paginate.next.url }}">{{ paginate.next.title }}</a>
+                  {% endif %}
+                </div>
+              </section>
+            {% endpaginate %}
+          </div>
+        </div>
+
+        <!-- Membership Tab Panel -->
+        <div x-cloak x-show="selectedTab === 'membership'" 
+             id="tabpanelMembership" 
+             role="tabpanel" 
+             aria-label="membership">
+          <div class="w-full">
+            <!-- Points Display Section -->
+            <div class="w-full mb-8 flex flex-col items-center" x-data="{
+              smile: null,
+              smile_ui: null,
+              init(){
+                document.addEventListener('smile-ui-loaded', () => {
+                  this.smile = Smile
+                  this.smile_ui = SmileUI
+                });
+              }
+            }">
+              <h1 class="text-2xl font-bold">
+                會員積分及獎賞
+              </h1>
+              <p class="text-sm text-gray-500">
+                你現時有 <span x-text="smile.customer.points_balance"></span> 積分.
+              </p>
+
+              <button @click="smile_ui.openPanel({ deep_link: 'points_product:903352' })" class="btn btn--plain btn--smaller">立即換領</button>
+            </div>
+
+
+          </div>
+        </div>
       </div>
-      
     </div>
-
   </div>
 </section>
