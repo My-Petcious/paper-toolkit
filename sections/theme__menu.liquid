@@ -197,19 +197,41 @@
   <aside class="sticky bottom-0 {{ section.settings.bottom_color_scheme }}" x-show="!menu_nested">
     <div class="flex flex-wrap">
 
-      {% comment %} Account and languges {% endcomment %}
+      {% comment %} Member Promotion and Languages {% endcomment %}
       <div class="border--t-width {{ section.settings.bottom_color_border }} w-full">
         <div class="flex flex-wrap px-4 pt-2">
 
+        {% comment %} Member Promotion Section {% endcomment %}
         {% if shop.customer_accounts_enabled %} 
-          <a href="{{ routes.account_url }}" rel="nofollow" class="btn btn--smaller mb-2 mr-2
-            {{ section.settings.bottom_button_color }}">
-            {% if customer %}
-              {{ 'labels.account' | t }}
-            {% else %}
-            {{ 'actions.log_in' | t }}
-            {% endif %}
-          </a>
+          <div class="w-full mb-2">
+            <div class="flex items-center justify-between p-3 border--radius color__bg-overlay-1">
+              <div class="flex items-center">
+                {% render 'component__icon', icon: 'star', size: '20', class: 'mr-2' %}
+                <span class="type--small">
+                  {% if customer %}
+                    <span x-show="smile" x-text="'你現時有 ' + smile.customer.points_balance + ' 積分'"></span>
+                    <span x-show="!smile">會員專享優惠</span>
+                  {% else %}
+                    登入以查看會員積分
+                  {% endif %}
+                </span>
+              </div>
+              <div>
+                {% if customer %}
+                  <button x-show="smile" @click="smile_ui.openPanel({ deep_link: 'points_product:903352' })" class="btn btn--smaller btn--secondary">
+                    立即換領
+                  </button>
+                  <span x-show="!smile" class="btn btn--smaller btn--secondary">
+                    會員專享
+                  </span>
+                {% else %}
+                  <a href="{{ routes.account_login_url }}" class="btn btn--smaller btn--secondary">
+                    登入
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
         {% endif %}
 
           {% if settings.enable_region or settings.enable_language %}
