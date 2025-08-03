@@ -32,5 +32,14 @@ window.app = function () {
     ...collections,
     ...utils,
     ...Shopify,
+    // Smile and SmileUI variables
+    smile: null,
+    smile_ui: null,
+    init() {
+      document.addEventListener('smile-ui-loaded', () => {
+        this.smile = Smile;
+        this.smile_ui = SmileUI;
+      });
+    }
   };
 };
