@@ -151,6 +151,41 @@
             }"
             @scroll.throttle="scroll = true">
 
+            {% comment %} Membership Reminder {% endcomment %}
+            <div class="border--b-width px-4 py-4
+              {{ section.settings.main_color_scheme_second }}
+              {{ section.settings.main_color_border }}"
+              x-show="cart.items.length > 0"
+              x-cloak>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                  {% render 'component__icon', icon: 'star', size: '20', class: 'mr-2' %}
+                  <span class="type--small">
+                    {% if customer %}
+                      <span x-show="smile" x-text="'你現時有 ' + smile.customer.points_balance + ' 積分'"></span>
+                      <span x-show="!smile">會員專享優惠</span>
+                    {% else %}
+                      登入以查看會員積分
+                    {% endif %}
+                  </span>
+                </div>
+                <div>
+                  {% if customer %}
+                    <button x-show="smile" @click="smile_ui.openPanel({ deep_link: 'points_product:903352' })" class="btn btn--smaller btn--secondary">
+                      立即換領
+                    </button>
+                    <span x-show="!smile" class="btn btn--smaller btn--secondary">
+                      會員專享
+                    </span>
+                  {% else %}
+                    <a href="{{ routes.account_login_url }}" class="btn btn--smaller btn--secondary">
+                      登入
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+
             {% comment %} Progress bar {% endcomment %}
             {% if section.settings.progress_bar_enable %}
               <div class="border--b-width px-4 py-4
