@@ -43,11 +43,31 @@
           </div>
         {% endform %}
       </div>
-  
+
       {% comment %} Login {% endcomment %}
       <h1 id="login">
         {{ 'actions.log_in' | t }}
       </h1>
+
+      {% comment %} Membership Promotion Section {% endcomment %}
+      <div class="p-6 mb-8 border--radius color__bg-overlay-1">
+        <div class="flex items-center mb-4">
+          {% render 'component__icon', icon: 'star', size: '24', class: 'mr-3' %}
+          <h2 class="type__heading mb-0">會員專享優惠</h2>
+        </div>
+        <div class="mb-4">
+          <p class="mb-2">加入我們的會員計劃，享受以下專屬優惠：</p>
+          <ul class="list-disc list-inside space-y-1 type--small">
+            <li>購物賺取積分，兌換現金折扣</li>
+            <li>會員專屬折扣和優惠</li>
+            <li>生日月份特別優惠</li>
+            <li>優先獲得新產品資訊</li>
+            <li>免費送貨門檻降低</li>
+          </ul>
+        </div>
+
+      </div>
+
       <div class="w-full">
         {% form 'customer_login' %}
 
