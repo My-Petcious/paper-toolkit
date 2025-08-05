@@ -1,48 +1,3 @@
-var _a, _b;
-const scriptRel = "modulepreload";
-const assetsURL = function(dep, importerUrl) {
-  return new URL(dep, importerUrl).href;
-};
-const seen = {};
-const __vitePreload = function preload(baseModule, deps, importerUrl) {
-  if (!deps || deps.length === 0) {
-    return baseModule();
-  }
-  const links = document.getElementsByTagName("link");
-  return Promise.all(deps.map((dep) => {
-    dep = assetsURL(dep, importerUrl);
-    if (dep in seen)
-      return;
-    seen[dep] = true;
-    const isCss = dep.endsWith(".css");
-    const cssSelector = isCss ? '[rel="stylesheet"]' : "";
-    const isBaseRelative = !!importerUrl;
-    if (isBaseRelative) {
-      for (let i = links.length - 1; i >= 0; i--) {
-        const link2 = links[i];
-        if (link2.href === dep && (!isCss || link2.rel === "stylesheet")) {
-          return;
-        }
-      }
-    } else if (document.querySelector(`link[href="${dep}"]${cssSelector}`)) {
-      return;
-    }
-    const link = document.createElement("link");
-    link.rel = isCss ? "stylesheet" : scriptRel;
-    if (!isCss) {
-      link.as = "script";
-      link.crossOrigin = "";
-    }
-    link.href = dep;
-    document.head.appendChild(link);
-    if (isCss) {
-      return new Promise((res, rej) => {
-        link.addEventListener("load", res);
-        link.addEventListener("error", () => rej(new Error(`Unable to preload CSS for ${dep}`)));
-      });
-    }
-  })).then(() => baseModule());
-};
 const app = window.__initialData;
 const globals = {
   // Scroll
@@ -1281,9 +1236,9 @@ const utils = {
   // Add classes to images after loading
   loadImages() {
     const loadImage = (img) => {
-      var _a2, _b2;
+      var _a, _b;
       img.classList.add("loaded");
-      (_b2 = (_a2 = img.parentElement) == null ? void 0 : _a2.parentElement) == null ? void 0 : _b2.classList.add("loaded");
+      (_b = (_a = img.parentElement) == null ? void 0 : _a.parentElement) == null ? void 0 : _b.classList.add("loaded");
     };
     const images = document.querySelectorAll("img.js-image");
     images.forEach((img) => {
@@ -1553,7 +1508,7 @@ if (isSupported) {
           if (entry.isIntersecting) {
             const linkElement = entry.target;
             intersectionObserver.unobserve(linkElement);
-            preload2(linkElement.href);
+            preload(linkElement.href);
           }
         });
       });
@@ -1571,7 +1526,7 @@ function touchstartListener(event) {
   if (!isPreloadable(linkElement)) {
     return;
   }
-  preload2(linkElement.href);
+  preload(linkElement.href);
 }
 function mouseoverListener(event) {
   if (performance.now() - lastTouchTimestamp < DELAY_TO_NOT_BE_CONSIDERED_A_TOUCH_INITIATED_ACTION) {
@@ -1586,7 +1541,7 @@ function mouseoverListener(event) {
   }
   linkElement.addEventListener("mouseout", mouseoutListener, { passive: true });
   mouseoverTimer = setTimeout(() => {
-    preload2(linkElement.href);
+    preload(linkElement.href);
     mouseoverTimer = void 0;
   }, delayOnHover);
 }
@@ -1595,7 +1550,7 @@ function mousedownListener(event) {
   if (!isPreloadable(linkElement)) {
     return;
   }
-  preload2(linkElement.href);
+  preload(linkElement.href);
 }
 function mouseoutListener(event) {
   if (event.relatedTarget && event.target.closest("a") == event.relatedTarget.closest("a")) {
@@ -1653,7 +1608,7 @@ function isPreloadable(linkElement) {
   }
   return true;
 }
-function preload2(url) {
+function preload(url) {
   if (prefetches.has(url)) {
     return;
   }
@@ -5600,21 +5555,6 @@ function storageSet(key, value, storage) {
   storage.setItem(key, JSON.stringify(value));
 }
 var module_default = src_default;
-const isDevelopment = typeof window !== "undefined" && window.Shopify && window.Shopify.theme && window.Shopify.theme.role === "development";
-console.log("Stagewise: Development mode detected:", isDevelopment);
-console.log("Stagewise: Shopify theme role:", (_b = (_a = window.Shopify) == null ? void 0 : _a.theme) == null ? void 0 : _b.role);
-if (isDevelopment) {
-  console.log("Stagewise: Attempting to load toolbar...");
-  __vitePreload(() => import("./index.es-f95f1874.js"), true ? [] : void 0, import.meta.url).then(({ initToolbar }) => {
-    console.log("Stagewise: Toolbar imported successfully");
-    initToolbar({
-      plugins: []
-    });
-    console.log("Stagewise: Toolbar initialized");
-  }).catch((error2) => {
-    console.error("Stagewise: Failed to load toolbar:", error2);
-  });
-}
 module_default$3.plugin(module_default);
 module_default$3.plugin(module_default$2);
 module_default$3.plugin(module_default$1);

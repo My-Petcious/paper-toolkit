@@ -4,7 +4,7 @@
 {% endcomment %}
 {% assign path = assets | replace: '~/', '../' | replace: '@/', '../' %}
 {% if path == "/src/entrypoints/main.js" or path == "main.js" %}
-  <script src="{{ 'main-0047527c.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
+  <script src="{{ 'main-4d2eb800.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% elsif path == "/src/entrypoints/styles.css" or path == "styles.css" %}
-  {{ 'styles-75369449.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
+  {{ 'styles-a3d797d2.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
 {% endif %}

@@ -1380,9 +1380,6 @@ img:after {
 .mr-2 {
   margin-right: 0.5rem;
 }
-.mr-3 {
-  margin-right: 0.75rem;
-}
 .mr-4 {
   margin-right: 1rem;
 }
@@ -1933,12 +1930,6 @@ img:after {
 .snap-center {
   scroll-snap-align: center;
 }
-.list-inside {
-  list-style-position: inside;
-}
-.list-disc {
-  list-style-type: disc;
-}
 .list-none {
   list-style-type: none;
 }
@@ -2031,11 +2022,6 @@ img:after {
 }
 .gap-y-8 {
   row-gap: 2rem;
-}
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -2209,9 +2195,6 @@ img:after {
 }
 .p-4 {
   padding: 1rem;
-}
-.p-6 {
-  padding: 1.5rem;
 }
 .p-8 {
   padding: 2rem;
