@@ -12,70 +12,140 @@
     "slideshow_bemzQ7": {
       "type": "slideshow",
       "blocks": {
-        "slide_ziabjk": {
+        "slide_M4ABT8": {
           "type": "slide",
+          "name": "CNY",
           "settings": {
-            "image_background_desktop": "shopify://shop_images/PD_promotion_main_banner_d7a95fbf-e502-4ee7-b300-2dccd880610a.png",
-            "image_background_mobile": "shopify://shop_images/PD_promotion_mobile_banner_b501a65a-657d-4cd5-81fb-d5cb0adacfe3.png",
+            "image_background_desktop": "shopify://shop_images/48.png",
+            "image_background_mobile": "shopify://shop_images/CNY_mobile_banner.png",
             "show_entire_image": true,
             "show_video_background_mobile": true,
             "heading": "",
             "content": "",
             "button_color": "btn",
-            "button_label": "立即購買",
-            "button_url": "shopify://collections/獸醫處方糧",
-            "secondary_button_color": "btn btn--secondary",
-            "secondary_button_label": "",
-            "secondary_button_url": "shopify://collections/獸醫處方貓糧"
-          }
-        },
-        "slide_zDtUKx": {
-          "type": "slide",
-          "settings": {
-            "image_background_desktop": "shopify://shop_images/90_off_promotion_banner.png",
-            "image_background_mobile": "shopify://shop_images/90_off_mobile_banner.png",
-            "show_entire_image": true,
-            "show_video_background_mobile": true,
-            "heading": "",
-            "content": "",
-            "button_color": "btn",
-            "button_label": "立即搶購",
-            "button_url": "shopify://collections/1折加購專區",
+            "button_label": "查看優惠詳情",
+            "button_url": "shopify://blogs/promotions/my-petcious-新春網上寵物展-多重豪禮陪毛孩過好年",
             "secondary_button_color": "btn btn--neutral",
             "secondary_button_label": "",
             "secondary_button_url": "shopify://collections/all"
           }
         },
-        "slide_VmDTR4": {
+        "slide_dL7jV8": {
           "type": "slide",
           "settings": {
-            "image_background_desktop": "shopify://shop_images/GI_promotion_manin_banner.png",
-            "image_background_mobile": "shopify://shop_images/GI_promotion_mo_banner.png",
+            "image_background_desktop": "shopify://shop_images/CNY_safety_banner.png",
+            "image_background_mobile": "shopify://shop_images/48_d9a5d195-e63a-48e2-890a-ef18bcc23ce5.png",
             "show_entire_image": true,
             "show_video_background_mobile": true,
             "heading": "",
-            "content": "<p>             </p>",
-            "button_color": "btn btn--secondary",
-            "button_label": "狗狗",
-            "button_url": "shopify://collections/狗狗益生菌-腸道健康",
-            "secondary_button_color": "btn",
-            "secondary_button_label": "貓貓",
-            "secondary_button_url": "shopify://collections/貓貓益生菌-腸道健康"
+            "content": "",
+            "button_color": "btn",
+            "button_label": "了解更加",
+            "button_url": "shopify://blogs/獸醫專區/cny-pets-safety",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
           }
         },
-        "slide_CgDGLx": {
+        "slide_LwwTjF": {
           "type": "slide",
-          "name": "Deworm promotion",
           "settings": {
-            "image_background_desktop": "shopify://shop_images/Deworn_promotion_main_banner.png",
-            "image_background_mobile": "shopify://shop_images/Deworn_promotion_mobile_banner.png",
+            "image_background_desktop": "shopify://shop_images/58.png",
+            "image_background_mobile": "shopify://shop_images/CNYclean_mobile.png",
+            "show_entire_image": true,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "了解更多",
+            "button_url": "shopify://blogs/獸醫專區/pet-friendly-home-cleaning-guide-2026",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_6YxwV6": {
+          "type": "slide",
+          "name": "Momo care",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/MOMO_care.png",
+            "image_background_mobile": "shopify://shop_images/MOMO_12.jpg",
+            "show_entire_image": true,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "立即選購",
+            "button_url": "shopify://collections/momocare",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_QrpVf7": {
+          "type": "slide",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/MyPetciousBanner.png",
+            "image_background_mobile": "shopify://shop_images/MyPetcious_Homepage_Banner_1.png",
+            "show_entire_image": true,
+            "show_video_background_mobile": false,
+            "heading": "由專業獸醫團隊管理",
+            "content": "<p>全天候照顧寵物所需</p>",
+            "button_color": "btn",
+            "button_label": "選購產品",
+            "button_url": "/collections/all",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "/collections/all"
+          }
+        },
+        "slide_9JYfqh": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/Bravecto_xmas_promotion.png",
+            "image_background_mobile": "shopify://shop_images/bravecto_xmas_promo_mobile.png",
             "show_entire_image": true,
             "show_video_background_mobile": true,
             "heading": "",
             "content": "",
             "button_color": "btn",
             "button_label": "立即購買",
-            "button_url": "shopify://collections/驅蟲及杜蟲產品",
+            "button_url": "shopify://products/bravecto-plus-spot-on-for-cats-長效全方位貓用滴劑",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_Tzzmjd": {
+          "type": "slide",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/Cat_deworm_banner_da2a469f-7f9c-45ee-8175-e73726a6c98c.png",
+            "image_background_mobile": "shopify://shop_images/Cat_deworm_mobile_banner.png",
+            "show_entire_image": true,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "了解更多",
+            "button_url": "shopify://blogs/獸醫專區/貓貓寄生蟲預防攻略2025",
+            "secondary_button_color": "btn btn--neutral",
+            "secondary_button_label": "",
+            "secondary_button_url": "shopify://collections/all"
+          }
+        },
+        "slide_QdnWyT": {
+          "type": "slide",
+          "settings": {
+            "image_background_desktop": "shopify://shop_images/my_petcious_member_banner.jpg",
+            "image_background_mobile": "shopify://shop_images/Membership_mobile_banner.png",
+            "show_entire_image": true,
+            "show_video_background_mobile": true,
+            "heading": "",
+            "content": "",
+            "button_color": "btn",
+            "button_label": "立即登記",
+            "button_url": "shopify://pages/my-petcious-member",
             "secondary_button_color": "btn btn--neutral",
             "secondary_button_label": "",
             "secondary_button_url": "shopify://collections/all"
@@ -98,71 +168,20 @@
             "secondary_button_label": "",
             "secondary_button_url": "shopify://collections/all"
           }
-        },
-        "slide_qRJeHV": {
-          "type": "slide",
-          "name": "Dog skin diease",
-          "settings": {
-            "image_background_desktop": "shopify://shop_images/Dog_Skin_diease_main_banner.png",
-            "image_background_mobile": "shopify://shop_images/Dog_skin_diease_mobile_banner.png",
-            "show_entire_image": true,
-            "show_video_background_mobile": true,
-            "heading": "",
-            "content": "",
-            "button_color": "btn",
-            "button_label": "按此了解",
-            "button_url": "https://mypetcious.com/blogs/%E7%8D%B8%E9%86%AB%E5%B0%88%E5%8D%80/%E7%8B%97%E7%8B%97%E7%9A%AE%E8%86%9A%E7%B4%85%E8%85%AB-%E7%94%A9%E6%AF%9B-%E4%B8%8D%E5%81%9C%E6%8A%93%E7%99%A2%E6%80%8E%E9%BA%BC%E8%BE%A6-%E7%8B%97%E7%8B%97%E7%9A%AE%E8%86%9A%E7%97%85%E7%97%87%E7%8B%80-%E5%8E%9F%E5%9B%A0%E8%88%87%E6%97%A5%E5%B8%B8%E8%AD%B7%E7%90%86%E6%8C%87%E5%8D%97",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "",
-            "secondary_button_url": "shopify://collections/all"
-          }
-        },
-        "slide_TQMKPx": {
-          "type": "slide",
-          "name": "Deworm",
-          "settings": {
-            "image_background_desktop": "shopify://shop_images/blog_main_banner.png",
-            "image_background_mobile": "shopify://shop_images/My_Petcious_mobile_banner_v2.png",
-            "show_entire_image": true,
-            "show_video_background_mobile": true,
-            "heading": "",
-            "content": "",
-            "button_color": "btn",
-            "button_label": "按此了解",
-            "button_url": "https://mypetcious.com/blogs/%E7%8D%B8%E9%86%AB%E5%B0%88%E5%8D%80/%E7%8B%97%E7%8B%97%E9%A0%AD%E8%99%9F%E5%AF%84%E7%94%9F%E8%9F%B2%E5%A4%A7%E6%95%B5-%E7%89%9B%E8%9C%B1-%E5%A3%81%E8%9D%A8-%E7%9A%84%E9%A0%90%E9%98%B2%E8%88%87%E6%B2%BB%E7%99%82%E5%85%A8%E6%94%BB%E7%95%A5-my-petcious",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "",
-            "secondary_button_url": "shopify://collections/all"
-          }
-        },
-        "slide_QrpVf7": {
-          "type": "slide",
-          "settings": {
-            "image_background_desktop": "shopify://shop_images/MyPetciousBanner.png",
-            "image_background_mobile": "shopify://shop_images/MyPetcious_Homepage_Banner_1.png",
-            "show_entire_image": true,
-            "show_video_background_mobile": false,
-            "heading": "由專業獸醫團隊管理",
-            "content": "<p>全天候照顧寵物所需</p>",
-            "button_color": "btn",
-            "button_label": "選購產品",
-            "button_url": "/collections/all",
-            "secondary_button_color": "btn btn--neutral",
-            "secondary_button_label": "",
-            "secondary_button_url": "/collections/all"
-          }
         }
       },
       "block_order": [
-        "slide_ziabjk",
-        "slide_zDtUKx",
-        "slide_VmDTR4",
-        "slide_CgDGLx",
-        "slide_hE3iXh",
-        "slide_qRJeHV",
-        "slide_TQMKPx",
-        "slide_QrpVf7"
+        "slide_M4ABT8",
+        "slide_dL7jV8",
+        "slide_LwwTjF",
+        "slide_6YxwV6",
+        "slide_QrpVf7",
+        "slide_9JYfqh",
+        "slide_Tzzmjd",
+        "slide_QdnWyT",
+        "slide_hE3iXh"
       ],
+      "name": "Banner",
       "settings": {
         "color_scheme": "color__bg-overlay-1 color__text",
         "color_text": "color__light",
@@ -258,16 +277,16 @@
         "visibility": "md:hidden"
       }
     },
-    "product_featured_6fYTD4": {
+    "product_featured_QNMMrw": {
       "type": "product-featured",
-      "name": "一折加購區",
+      "name": "新年春優惠組合",
       "settings": {
-        "collection": "1折加購專區",
-        "products_count": 4,
-        "heading": "一折加購區",
-        "content": "<p>凡購物任何產品每滿$300，即可以一折優惠價錢加購以下產品一件。</p>",
-        "button_label": "更多",
-        "button_url": "shopify://collections/1折加購專區",
+        "collection": "新春寵物展優惠組合",
+        "products_count": 6,
+        "heading": "新春寵物展優惠組合",
+        "content": "<p>多重豪禮陪毛孩過好年，六大「行運組合」低至 7 折！</p>",
+        "button_label": "",
+        "button_url": "/collections/all",
         "spacing_top": 20,
         "spacing_bottom": 20,
         "color_scheme": "color__bg-body color__text",
@@ -282,6 +301,7 @@
     },
     "product_featured_VELtib": {
       "type": "product-featured",
+      "disabled": true,
       "name": "特價專區",
       "settings": {
         "collection": "優惠特區",
@@ -290,6 +310,28 @@
         "content": "<p>優惠產品不定時更新，優惠數量有限，欲購從速！</p>",
         "button_label": "查看更多",
         "button_url": "shopify://collections/優惠特區",
+        "spacing_top": 20,
+        "spacing_bottom": 0,
+        "color_scheme": "color__bg-body color__text",
+        "color_border": "color__border-divider-1",
+        "color_button": "btn btn--secondary",
+        "style_border": "border--b-width",
+        "row_size_desktop": "md:grid-cols-4",
+        "row_size_mobile": "grid grid-cols-2",
+        "layout_x_alignment": "justify-between",
+        "visibility": ""
+      }
+    },
+    "product_featured_tzR8mN": {
+      "type": "product-featured",
+      "name": "近期貨清貨特價區",
+      "settings": {
+        "collection": "近期清貨特價",
+        "products_count": 4,
+        "heading": "近期貨清貨特價區",
+        "content": "<p>品質依然，優惠加倍，低至三折～</p>",
+        "button_label": "更多",
+        "button_url": "shopify://collections/近期清貨特價",
         "spacing_top": 20,
         "spacing_bottom": 0,
         "color_scheme": "color__bg-body color__text",
@@ -421,7 +463,8 @@
           "stella-chewys",
           "protexin",
           "ziwipeak",
-          "canagan"
+          "canagan",
+          "vet-expert"
         ],
         "heading": "精選優質品牌",
         "content": "<p>My Petcious為你搜羅全球各大知名品牌寵物糧、處方糧、寵物補健品及寵物護理護理用品，保證你一定能找到最適合你愛寵需要的優質產品。</p>",
@@ -548,8 +591,9 @@
   "order": [
     "slideshow_bemzQ7",
     "navigation_slider_qjE3yV",
-    "product_featured_6fYTD4",
+    "product_featured_QNMMrw",
     "product_featured_VELtib",
+    "product_featured_tzR8mN",
     "collection_slider_zcHUW9",
     "icon_grid_CDEwhL",
     "collection_slider_98rKEH",

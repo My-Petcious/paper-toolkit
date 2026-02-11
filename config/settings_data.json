@@ -41,7 +41,7 @@
     "layout_gap_size": 13,
     "enable_audio": true,
     "enable_animations": true,
-    "favicon": "shopify://shop_images/MyPetcious_Logo_Icon_Colored_ff16352a-8b0f-4221-914b-d0cc676dadf7.svg",
+    "favicon": "shopify://shop_images/MyPetcious_Logo_Icon_Colored_google_optimised.png",
     "product_card_color_scheme": "color__bg-overlay-1 after:color__bg-overlay-1 color__text after:color__text",
     "product_card_color_border": "border--width color__border-divider-1",
     "product_card_badge_scheme": "body",
@@ -210,6 +210,16 @@
       },
       "6174324309569838175": {
         "type": "shopify://apps/smile-io/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": false,
+        "settings": {}
+      },
+      "16225679183443353566": {
+        "type": "shopify://apps/pixiehog/blocks/posthog_js_web/3bc10c13-7b55-491e-8df6-d5677acf3250",
+        "disabled": false,
+        "settings": {}
+      },
+      "17676059084223943535": {
+        "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
         "disabled": false,
         "settings": {}
       }
