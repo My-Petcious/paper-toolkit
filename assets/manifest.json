@@ -1,13 +1,5 @@
 {
-  "node_modules/@stagewise/toolbar/dist/index.es.js": {
-    "file": "index.es-f95f1874.js",
-    "isDynamicEntry": true,
-    "src": "node_modules/@stagewise/toolbar/dist/index.es.js"
-  },
   "src/entrypoints/main.js": {
-    "dynamicImports": [
-      "node_modules/@stagewise/toolbar/dist/index.es.js"
-    ],
     "file": "main-0047527c.js",
     "isEntry": true,
     "src": "src/entrypoints/main.js"
