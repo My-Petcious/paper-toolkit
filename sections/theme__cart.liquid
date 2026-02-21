@@ -162,8 +162,7 @@
                   {% render 'component__icon', icon: 'star', size: '20', class: 'mr-2' %}
                   <span class="type--small">
                     {% if customer %}
-                      <span x-show="smile" x-text="'你現時有 ' + smile.customer.points_balance + ' 積分'"></span>
-                      <span x-show="!smile">會員專享優惠</span>
+                      你現時有 <span class="sweettooth-points-balance"></span> 積分
                     {% else %}
                       登入以查看會員積分
                     {% endif %}
@@ -171,12 +170,9 @@
                 </div>
                 <div>
                   {% if customer %}
-                    <button x-show="smile" @click="smile_ui.openPanel({ deep_link: 'points_product:903352' })" class="btn btn--smaller btn--secondary">
+                    <button @click="smile_ui.openPanel({ deep_link: 'points_product:903352' })" class="btn btn--smaller btn--secondary">
                       立即換領
                     </button>
-                    <span x-show="!smile" class="btn btn--smaller btn--secondary">
-                      會員專享
-                    </span>
                   {% else %}
                     <a href="{{ routes.account_login_url }}" class="btn btn--smaller btn--secondary">
                       登入

@@ -18,7 +18,9 @@ declare global {
     app: () => AppInterface;
     __initialData: AppInterface;
     Shopify: ShopifyInterface;
+    SmileUI: any;
   }
+  const SmileUI: any;
 }
 
 // Expose variables and functions to Alpine
@@ -32,14 +34,15 @@ window.app = function () {
     ...collections,
     ...utils,
     ...Shopify,
-    // Smile and SmileUI variables
-    smile: null,
-    smile_ui: null,
+    // Smile UI
+    smile_ui: null as any,
     init() {
-      document.addEventListener('smile-ui-loaded', () => {
-        this.smile = Smile;
-        this.smile_ui = SmileUI;
-      });
+      const initSmileUI = () => { this.smile_ui = SmileUI; };
+      if (window.SmileUI) {
+        initSmileUI();
+      } else {
+        document.addEventListener('smile-ui-loaded', initSmileUI);
+      }
     }
   };
 };
